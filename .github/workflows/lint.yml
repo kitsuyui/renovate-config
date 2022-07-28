@@ -1,0 +1,12 @@
+name: Test renovate.json configuration
+on: pull_request
+
+jobs:
+  validate:
+    name: Validate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install renovate-config-validator
+        run: npx --package renovate -c 'renovate-config-validator'

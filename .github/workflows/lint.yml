@@ -5,8 +5,18 @@ jobs:
   validate:
     name: Validate
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v3
 
-      - name: Install renovate-config-validator
-        run: npx --package renovate -c 'renovate-config-validator'
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+          cache: yarn
+          cache-dependency-path: yarn.lock
+
+      - name: Installation
+        run: yarn
+
+      - name: Test
+        run: yarn renovate-config-validator

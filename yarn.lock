@@ -3649,6 +3649,11 @@ luxon@3.0.4:
   resolved "https://registry.yarnpkg.com/luxon/-/luxon-3.0.4.tgz#d179e4e9f05e092241e7044f64aaa54796b03929"
   integrity sha512-aV48rGUwP/Vydn8HT+5cdr26YYQiUZ42NM6ToMoaGKwYfWbfLeRkEu1wXWMHBZT6+KyLfcbbtVcoQFCbbPjKlw==
 
+luxon@3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/luxon/-/luxon-3.1.0.tgz#9ac33d7142b7ea18d4ec8583cdeb0b079abef60d"
+  integrity sha512-7w6hmKC0/aoWnEsmPCu5Br54BmbmUp5GfcqBxQngRcXJ+q5fdfjEzn7dxmJh2YdDhgW8PccYtlWKSv4tQkrTQg==
+
 make-fetch-happen@^10.0.3:
   version "10.2.0"
   resolved "https://registry.yarnpkg.com/make-fetch-happen/-/make-fetch-happen-10.2.0.tgz#0bde3914f2f82750b5d48c6d2294d2c74f985e5b"
@@ -4498,10 +4503,10 @@ remark@13.0.0:
     remark-stringify "^9.0.0"
     unified "^9.1.0"
 
-renovate@34.13.2:
-  version "34.13.2"
-  resolved "https://registry.yarnpkg.com/renovate/-/renovate-34.13.2.tgz#1683fecb184301cad1941b6891650ac82495690c"
-  integrity sha512-E7oeH2dsmbikw2FqTI//AExeFTjriHhVgE1G8KHrppDGRCts6LV9Jrt3S6+rTnVsRWGDn4Jzl8n3UY1zv42rTQ==
+renovate@34.20.2:
+  version "34.20.2"
+  resolved "https://registry.yarnpkg.com/renovate/-/renovate-34.20.2.tgz#24cc4e9704bdf5f81fce18631c8d087a733b6341"
+  integrity sha512-MhwccgRDXPUSi8bM9AOmyM2LzspaQRnLe+fiCr0ZT3FdqvcixuMDbGI9gtKdlpukonV7XGKgb4tLJ86LefTtdw==
   dependencies:
     "@aws-sdk/client-codecommit" "3.154.0"
     "@aws-sdk/client-ec2" "3.155.0"
@@ -4570,7 +4575,7 @@ renovate@34.13.2:
     json-dup-key-validator "1.0.3"
     json-stringify-pretty-compact "3.0.0"
     json5 "2.2.1"
-    luxon "3.0.4"
+    luxon "3.1.0"
     markdown-it "13.0.1"
     markdown-table "2.0.0"
     marshal "0.5.4"
@@ -4597,7 +4602,7 @@ renovate@34.13.2:
     simple-git "3.14.1"
     slugify "1.6.5"
     traverse "0.6.7"
-    tslib "2.4.0"
+    tslib "2.4.1"
     upath "2.0.1"
     url-join "4.0.1"
     validate-npm-package-name "5.0.0"
@@ -5090,6 +5095,11 @@ tslib@2.4.0, tslib@^2.3.1:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.4.0.tgz#7cecaa7f073ce680a05847aa77be941098f36dc3"
   integrity sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==
+
+tslib@2.4.1:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.4.1.tgz#0d0bfbaac2880b91e22df0768e55be9753a5b17e"
+  integrity sha512-tGyy4dAjRIEwI7BzsB0lynWgOpfqjUdq91XXAlIWD2OwKBH7oCl/GZG/HT4BOHrTlPMOASlMQ7veyTqpmRcrNA==
 
 tslib@^1.11.1, tslib@^1.13.0:
   version "1.14.1"

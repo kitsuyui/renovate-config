@@ -20,6 +20,16 @@
         "matchPackagePatterns": [
           "^serde"
         ]
+      },
+      {
+        "groupName": "pyo3",
+        "matchPackageNames": [
+          "pyo3",
+          "pyo3-build-config",
+          "pyo3-ffi",
+          "pyo3-macros",
+          "pyo3-macros-backend"
+        ]
       }
     ]
   }

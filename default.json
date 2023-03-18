@@ -33,6 +33,14 @@
           "pyo3-macros",
           "pyo3-macros-backend"
         ]
+      },
+      {
+        "groupName": "clap",
+        "matchPackageNames": [
+          "clap",
+          "clap_complete",
+          "clap_derive"
+        ]
       }
     ]
   },

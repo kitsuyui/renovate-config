@@ -1,6 +1,6 @@
 {
   "private": true,
   "devDependencies": {
-    "renovate": "35.23.1"
+    "renovate": "35.23.3"
   }
 }

@@ -2,5 +2,20 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "github>kitsuyui/renovate-config"
+  ],
+  "packageRules": [
+    {
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "matchDepTypes": [
+        "devDependencies"
+      ],
+      "matchPackagePatterns": [
+        "renovate"
+      ],
+      "automerge": true
+    }
   ]
 }

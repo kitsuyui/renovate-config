@@ -19,4 +19,4 @@ jobs:
         run: yarn
 
       - name: Test
-        run: yarn renovate-config-validator default.json renovate.json
+        run: yarn check

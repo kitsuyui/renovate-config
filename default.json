@@ -62,5 +62,16 @@
         ]
       }
     ]
+  },
+  "npm": {
+    "packageRules": [
+      {
+        "groupName": "swc",
+        "matchPackageNames": [
+          "@swc/core",
+          "@swc/jest"
+        ]
+      }
+    ]
   }
 }

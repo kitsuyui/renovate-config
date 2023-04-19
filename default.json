@@ -41,6 +41,13 @@
           "clap_complete",
           "clap_derive"
         ]
+      },
+      {
+        "groupName": "assert_cmd",
+        "matchPackageNames": [
+          "assert_cmd",
+          "predicates"
+        ]
       }
     ]
   },

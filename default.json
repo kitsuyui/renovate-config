@@ -41,6 +41,13 @@
           "clap_complete",
           "clap_derive"
         ]
+      },
+      {
+        "groupName": "assert_cmd",
+        "matchPackageNames": [
+          "assert_cmd",
+          "predicates"
+        ]
       }
     ]
   },
@@ -52,6 +59,17 @@
           "boto3",
           "botocore",
           "boto3-stubs"
+        ]
+      }
+    ]
+  },
+  "npm": {
+    "packageRules": [
+      {
+        "groupName": "swc",
+        "matchPackageNames": [
+          "@swc/core",
+          "@swc/jest"
         ]
       }
     ]

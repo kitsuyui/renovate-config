@@ -71,6 +71,12 @@
           "@swc/core",
           "@swc/jest"
         ]
+      },
+      {
+        "groupName": "kitsuyui-react-packages",
+        "matchPackagePatterns": [
+          "^@kitsuyui/react-"
+        ]
       }
     ]
   }

@@ -4,6 +4,11 @@
     ":dependencyDashboard",
     "default:pinDigestsDisabled"
   ],
+  "timezone": "Asia/Tokyo",
+  "schedule": [
+    "before 9am every weekday",
+    "every weekend"
+  ],
   "pin": {
     "automerge": true
   },

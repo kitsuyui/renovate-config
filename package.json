@@ -4,6 +4,6 @@
     "validate:renovate": "renovate-config-validator default.json renovate.json5"
   },
   "devDependencies": {
-    "renovate": "35.117.2"
+    "renovate": "35.118.0"
   }
 }

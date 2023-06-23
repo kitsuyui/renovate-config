@@ -3920,7 +3920,7 @@ node-fetch@^2.6.11, node-fetch@^2.6.7:
   dependencies:
     whatwg-url "^5.0.0"
 
-node-gyp@^9.3.1:
+node-gyp@^9.4.0:
   version "9.4.0"
   resolved "https://registry.npmjs.org/node-gyp/-/node-gyp-9.4.0.tgz"
   integrity sha512-dMXsYP6gc9rRbejLXmTbVRYjAHw7ppswsKyMxuxJxxOHzluIO1rGp9TOQgjFJ+2MCqcOcQTOPB/8Xwhr+7s4Eg==
@@ -4303,14 +4303,14 @@ quick-lru@^4.0.1:
   resolved "https://registry.npmjs.org/quick-lru/-/quick-lru-4.0.1.tgz"
   integrity sha512-ARhCpm70fzdcvNQfPoy49IaanKkTlRWF2JMzqhcJbhSFRZv7nPTvZJdcY7301IPmvW+/p0RgIWnQDLJxifsQ7g==
 
-re2@1.19.0:
-  version "1.19.0"
-  resolved "https://registry.npmjs.org/re2/-/re2-1.19.0.tgz"
-  integrity sha512-y0LcLZgBF3L7mDtNfbghb7dCmChYQO2QsUGklNueAJUH+HAZO8UZUubgNsf6OxRTAQpeE4KMPR7vcpK3+Q+GiA==
+re2@1.19.1:
+  version "1.19.1"
+  resolved "https://registry.npmjs.org/re2/-/re2-1.19.1.tgz"
+  integrity sha512-pML2LZvGdjESWAsufwlFwF+TBauIx7ItgcPIL0KiiZ9GrJ5OU3aJEc/EZvygB32nhjrRxe6QQFbie79QhT7gVA==
   dependencies:
     install-artifact-from-github "^1.3.3"
     nan "^2.17.0"
-    node-gyp "^9.3.1"
+    node-gyp "^9.4.0"
 
 read-pkg-up@^7.0.1:
   version "7.0.1"
@@ -4423,10 +4423,10 @@ remark@13.0.0:
     remark-stringify "^9.0.0"
     unified "^9.1.0"
 
-renovate@35.140.1:
-  version "35.140.1"
-  resolved "https://registry.npmjs.org/renovate/-/renovate-35.140.1.tgz"
-  integrity sha512-mj7xl0AZEAYGCqkdDN7oxD5y28bnjYtT/SIfZrBjQkURGG9+Pq+a13IRTlJjstfH2SX9DV2cPqERU/y3hkuDgQ==
+renovate@35.140.3:
+  version "35.140.3"
+  resolved "https://registry.npmjs.org/renovate/-/renovate-35.140.3.tgz"
+  integrity sha512-ZAoTf30dg7H0SPTj4binm8xbEY7LS02BTDVPHZrpskazbgc1XWMG1RfsrQ4z45BsQ/SO7OuSrwwGCpZ9a8d2gQ==
   dependencies:
     "@aws-sdk/client-codecommit" "3.348.0"
     "@aws-sdk/client-ec2" "3.348.0"
@@ -4517,7 +4517,7 @@ renovate@35.140.1:
     remark "13.0.0"
     remark-github "10.1.0"
     safe-stable-stringify "2.4.3"
-    semver "7.5.1"
+    semver "7.5.3"
     semver-stable "3.0.0"
     semver-utils "1.1.4"
     shlex "2.1.2"
@@ -4533,7 +4533,7 @@ renovate@35.140.1:
     xmldoc "1.3.0"
     zod "3.21.4"
   optionalDependencies:
-    re2 "1.19.0"
+    re2 "1.19.1"
 
 repeat-string@^1.0.0:
   version "1.6.1"
@@ -4665,10 +4665,10 @@ semver-utils@1.1.4:
   resolved "https://registry.npmjs.org/semver/-/semver-5.7.1.tgz"
   integrity sha512-sauaDf/PZdVgrLTNYHRtpXa1iRiKcaebiKQ1BJdpQlWH2lCvexQdX55snPFyK7QzpudqbCI0qXFfOasHdyNDGQ==
 
-semver@7.5.1, semver@^7.0.0, semver@^7.1.2, semver@^7.3.2, semver@^7.3.4, semver@^7.3.5, semver@^7.3.8:
-  version "7.5.1"
-  resolved "https://registry.npmjs.org/semver/-/semver-7.5.1.tgz"
-  integrity sha512-Wvss5ivl8TMRZXXESstBA4uR5iXgEN/VC5/sOcuXdVLzcdkz4HWetIoRfG5gb5X+ij/G9rw9YoGn3QoQ8OCSpw==
+semver@7.5.3, semver@^7.0.0, semver@^7.1.2, semver@^7.3.2, semver@^7.3.4, semver@^7.3.5, semver@^7.3.8:
+  version "7.5.3"
+  resolved "https://registry.npmjs.org/semver/-/semver-7.5.3.tgz"
+  integrity sha512-QBlUtyVk/5EeHbi7X0fw6liDZc7BBmEaSYn01fMU1OUYbf6GPsbTtd8WmnqbI20SeycoHSeiybkE/q1Q+qlThQ==
   dependencies:
     lru-cache "^6.0.0"
 

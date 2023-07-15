@@ -3015,16 +3015,16 @@ glob-parent@^5.1.2:
   dependencies:
     is-glob "^4.0.1"
 
-glob@10.3.1, glob@^10.2.2:
-  version "10.3.1"
-  resolved "https://registry.npmjs.org/glob/-/glob-10.3.1.tgz"
-  integrity sha512-9BKYcEeIs7QwlCYs+Y3GBvqAMISufUS0i2ELd11zpZjxI5V9iyRj0HgzB5/cLf2NY4vcYBTYzJ7GIui7j/4DOw==
+glob@10.3.3, glob@^10.2.2:
+  version "10.3.3"
+  resolved "https://registry.npmjs.org/glob/-/glob-10.3.3.tgz"
+  integrity sha512-92vPiMb/iqpmEgsOoIDvTjc50wf9CCCvMzsi6W0JLPeUKE8TWP1a73PgqSrqy7iAZxaSD1YdzU7QZR5LF51MJw==
   dependencies:
     foreground-child "^3.1.0"
     jackspeak "^2.0.3"
     minimatch "^9.0.1"
-    minipass "^5.0.0 || ^6.0.2"
-    path-scurry "^1.10.0"
+    minipass "^5.0.0 || ^6.0.2 || ^7.0.0"
+    path-scurry "^1.10.1"
 
 glob@^6.0.1:
   version "6.0.4"
@@ -3920,7 +3920,7 @@ minipass@^3.0.0:
   dependencies:
     yallist "^4.0.0"
 
-minipass@^5.0.0, "minipass@^5.0.0 || ^6.0.2", "minipass@^5.0.0 || ^6.0.2 || ^7.0.0":
+minipass@^5.0.0, "minipass@^5.0.0 || ^6.0.2 || ^7.0.0":
   version "5.0.0"
   resolved "https://registry.npmjs.org/minipass/-/minipass-5.0.0.tgz"
   integrity sha512-3FnjYuehv9k6ovOEbyOswadCDPX1piCfhV8ncmYtHOjuPwylVWsghTLo7rabjC3Rx5xD4HDx8Wm1xnMF7S5qFQ==
@@ -4286,7 +4286,7 @@ path-parse@^1.0.7:
   resolved "https://registry.npmjs.org/path-parse/-/path-parse-1.0.7.tgz"
   integrity sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==
 
-path-scurry@^1.10.0:
+path-scurry@^1.10.1:
   version "1.10.1"
   resolved "https://registry.npmjs.org/path-scurry/-/path-scurry-1.10.1.tgz"
   integrity sha512-MkhCqzzBEpPvxxQ71Md0b1Kk51W01lrYvlMzSUaIzNsODdd7mqhiimSZlr+VegAz5Z6Vzt9Xg2ttE//XBhH3EQ==
@@ -4514,10 +4514,10 @@ remark@13.0.0:
     remark-stringify "^9.0.0"
     unified "^9.1.0"
 
-renovate@36.8.5:
-  version "36.8.5"
-  resolved "https://registry.npmjs.org/renovate/-/renovate-36.8.5.tgz"
-  integrity sha512-cBpPucKCQUK/ZdZkj8LUynJ8IdoRGPuvX/nY9F2BW3cyCbk//XH4xAK3E+huhIA3Ueh/77IL5yudsHNhE70atg==
+renovate@36.8.11:
+  version "36.8.11"
+  resolved "https://registry.npmjs.org/renovate/-/renovate-36.8.11.tgz"
+  integrity sha512-0QrrX0DllScYno7udKI9vH6EzemdGDZIEO4Rvu2aYQP9mI/s40e4iGc4iUYA8uRKICWkxT+IbA17JFKISahRpQ==
   dependencies:
     "@aws-sdk/client-codecommit" "3.363.0"
     "@aws-sdk/client-ec2" "3.363.0"
@@ -4574,7 +4574,7 @@ renovate@36.8.5:
     fs-extra "11.1.1"
     git-url-parse "13.1.0"
     github-url-from-git "1.5.0"
-    glob "10.3.1"
+    glob "10.3.3"
     global-agent "3.0.0"
     good-enough-parser "1.1.23"
     got "11.8.6"
@@ -4609,7 +4609,7 @@ renovate@36.8.5:
     remark "13.0.0"
     remark-github "10.1.0"
     safe-stable-stringify "2.4.3"
-    semver "7.5.3"
+    semver "7.5.4"
     semver-stable "3.0.0"
     semver-utils "1.1.4"
     shlex "2.1.2"
@@ -4757,10 +4757,10 @@ semver-utils@1.1.4:
   resolved "https://registry.npmjs.org/semver/-/semver-5.7.2.tgz"
   integrity sha512-cBznnQ9KjJqU67B52RMC65CMarK2600WFnbkcaiwWq3xy/5haFJlshgnpjovMVJ+Hff49d8GEn0b87C5pDQ10g==
 
-semver@7.5.3, semver@^7.0.0, semver@^7.1.2, semver@^7.3.2, semver@^7.3.4, semver@^7.3.5, semver@^7.5.1, semver@^7.5.3:
-  version "7.5.3"
-  resolved "https://registry.npmjs.org/semver/-/semver-7.5.3.tgz"
-  integrity sha512-QBlUtyVk/5EeHbi7X0fw6liDZc7BBmEaSYn01fMU1OUYbf6GPsbTtd8WmnqbI20SeycoHSeiybkE/q1Q+qlThQ==
+semver@7.5.4, semver@^7.0.0, semver@^7.1.2, semver@^7.3.2, semver@^7.3.4, semver@^7.3.5, semver@^7.5.1, semver@^7.5.3:
+  version "7.5.4"
+  resolved "https://registry.npmjs.org/semver/-/semver-7.5.4.tgz"
+  integrity sha512-1bCSESV6Pv+i21Hvpxp3Dx+pSD8lIPt8uVjRrxAUt/nbswYc+tK6Y2btiULjd4+fnq15PX+nqQDC7Oft7WkwcA==
   dependencies:
     lru-cache "^6.0.0"
 

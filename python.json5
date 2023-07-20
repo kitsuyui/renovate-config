@@ -1,0 +1,10 @@
+{
+  python: {
+    packageRules: [
+      {
+        groupName: "boto3",
+        matchPackageNames: ["boto3", "botocore", "boto3-stubs"],
+      },
+    ],
+  },
+}

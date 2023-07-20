@@ -2,7 +2,10 @@
   "extends": [
     "config:recommended",
     ":dependencyDashboard",
-    "default:pinDigestsDisabled"
+    "default:pinDigestsDisabled",
+    "github>kitsuyui/renovate-config:npm.json5",
+    "github>kitsuyui/renovate-config:python.json5",
+    "github>kitsuyui/renovate-config:cargo.json5"
   ],
   "timezone": "Asia/Tokyo",
   "schedule": [
@@ -14,75 +17,5 @@
   },
   "lockFileMaintenance": {
     "enabled": true
-  },
-  "cargo": {
-    "packageRules": [
-      {
-        "groupName": "serde",
-        "matchPackageNames": [
-          "serde",
-          "serde_derive",
-          "serde_json",
-          "serde_yaml"
-        ],
-        "matchPackagePatterns": [
-          "^serde"
-        ]
-      },
-      {
-        "groupName": "pyo3",
-        "matchPackageNames": [
-          "pyo3",
-          "pyo3-build-config",
-          "pyo3-ffi",
-          "pyo3-macros",
-          "pyo3-macros-backend"
-        ]
-      },
-      {
-        "groupName": "clap",
-        "matchPackageNames": [
-          "clap",
-          "clap_complete",
-          "clap_derive"
-        ]
-      },
-      {
-        "groupName": "assert_cmd",
-        "matchPackageNames": [
-          "assert_cmd",
-          "predicates"
-        ]
-      }
-    ]
-  },
-  "python": {
-    "packageRules": [
-      {
-        "groupName": "boto3",
-        "matchPackageNames": [
-          "boto3",
-          "botocore",
-          "boto3-stubs"
-        ]
-      }
-    ]
-  },
-  "npm": {
-    "packageRules": [
-      {
-        "groupName": "swc",
-        "matchPackageNames": [
-          "@swc/core",
-          "@swc/jest"
-        ]
-      },
-      {
-        "groupName": "kitsuyui-react-packages",
-        "matchPackagePatterns": [
-          "^@kitsuyui/react-"
-        ]
-      }
-    ]
   }
 }

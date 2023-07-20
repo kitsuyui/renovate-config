@@ -1,0 +1,34 @@
+{
+  cargo: {
+    packageRules: [
+      {
+        groupName: "serde",
+        matchPackageNames: [
+          "serde",
+          "serde_derive",
+          "serde_json",
+          "serde_yaml",
+        ],
+        matchPackagePatterns: ["^serde"],
+      },
+      {
+        groupName: "pyo3",
+        matchPackageNames: [
+          "pyo3",
+          "pyo3-build-config",
+          "pyo3-ffi",
+          "pyo3-macros",
+          "pyo3-macros-backend",
+        ],
+      },
+      {
+        groupName: "clap",
+        matchPackageNames: ["clap", "clap_complete", "clap_derive"],
+      },
+      {
+        groupName: "assert_cmd",
+        matchPackageNames: ["assert_cmd", "predicates"],
+      },
+    ],
+  },
+}

@@ -1098,13 +1098,14 @@
     "@opentelemetry/sdk-trace-base" "1.15.0"
     tslib "^2.3.1"
 
-"@opentelemetry/instrumentation-bunyan@0.31.4":
-  version "0.31.4"
-  resolved "https://registry.npmjs.org/@opentelemetry/instrumentation-bunyan/-/instrumentation-bunyan-0.31.4.tgz"
-  integrity sha512-uwQPzNXq+f2/7odtYPsBlozm2bjDHLOB/r3pSO02BEnHG5L7RyzV7aPLH1xYTHrLnZAd8ew8Am5dGM4uRiO4sA==
+"@opentelemetry/instrumentation-bunyan@0.32.0":
+  version "0.32.0"
+  resolved "https://registry.npmjs.org/@opentelemetry/instrumentation-bunyan/-/instrumentation-bunyan-0.32.0.tgz"
+  integrity sha512-c2Fi12NMBPRNyzeMXjY3kmgJcu8T2TIR051S+EEnXP677+aJhUrzAPpIDEqJ3RITMemxS44NmDFnnG+p0zdUbg==
   dependencies:
-    "@opentelemetry/instrumentation" "^0.40.0"
+    "@opentelemetry/instrumentation" "^0.41.0"
     "@types/bunyan" "1.8.7"
+    tslib "^2.3.1"
 
 "@opentelemetry/instrumentation-http@0.41.0":
   version "0.41.0"
@@ -1117,7 +1118,7 @@
     semver "^7.5.1"
     tslib "^2.3.1"
 
-"@opentelemetry/instrumentation@0.41.0":
+"@opentelemetry/instrumentation@0.41.0", "@opentelemetry/instrumentation@^0.41.0":
   version "0.41.0"
   resolved "https://registry.npmjs.org/@opentelemetry/instrumentation/-/instrumentation-0.41.0.tgz"
   integrity sha512-Ut9SnZfi7MexOk+GHCMjEtYHogIb6v1dfbnq+oTbQj0lOQUSNLtlO6bXwUdtmPhbvrx6bC0AGr1L6g3rNimv9w==
@@ -1128,17 +1129,6 @@
     semver "^7.5.1"
     shimmer "^1.2.1"
     tslib "^2.3.1"
-
-"@opentelemetry/instrumentation@^0.40.0":
-  version "0.40.0"
-  resolved "https://registry.npmjs.org/@opentelemetry/instrumentation/-/instrumentation-0.40.0.tgz"
-  integrity sha512-23TzBKPflUS1uEq5SXymnQKQDSda35KvHjnvxdcDQGE+wg6hwDHgScUCWiBmZW4sxAaPcANfs+Wc9B7yDuyT6Q==
-  dependencies:
-    "@types/shimmer" "^1.0.2"
-    import-in-the-middle "1.3.5"
-    require-in-the-middle "^7.1.0"
-    semver "^7.3.2"
-    shimmer "^1.2.1"
 
 "@opentelemetry/otlp-exporter-base@0.41.0":
   version "0.41.0"
@@ -3268,13 +3258,6 @@ immediate@~3.0.5:
   resolved "https://registry.npmjs.org/immediate/-/immediate-3.0.6.tgz"
   integrity sha512-XXOFtyqDjNDAQxVfYxuF7g9Il/IbWmmlQg2MYKOH8ExIT1qg6xc4zyS3HaEEATgs1btfzxq15ciUiY7gjSXRGQ==
 
-import-in-the-middle@1.3.5:
-  version "1.3.5"
-  resolved "https://registry.npmjs.org/import-in-the-middle/-/import-in-the-middle-1.3.5.tgz"
-  integrity sha512-yzHlBqi1EBFrkieAnSt8eTgO5oLSl+YJ7qaOpUH/PMqQOMZoQ/RmDlwnTLQrwYto+gHYjRG+i/IbsB1eDx32NQ==
-  dependencies:
-    module-details-from-path "^1.0.3"
-
 import-in-the-middle@1.4.1:
   version "1.4.1"
   resolved "https://registry.npmjs.org/import-in-the-middle/-/import-in-the-middle-1.4.1.tgz"
@@ -4511,10 +4494,10 @@ remark@13.0.0:
     remark-stringify "^9.0.0"
     unified "^9.1.0"
 
-renovate@36.14.0:
-  version "36.14.0"
-  resolved "https://registry.npmjs.org/renovate/-/renovate-36.14.0.tgz"
-  integrity sha512-vjiw4wsTtBExL17sIjKASOyMQneFw+8/NHWXhQFQ92peQfHSbB59Q5rAXChNan9WSthcTygmytK0iWP6xyq6fQ==
+renovate@36.17.0:
+  version "36.17.0"
+  resolved "https://registry.npmjs.org/renovate/-/renovate-36.17.0.tgz"
+  integrity sha512-ijFiFmOrKK7BC+y2up9heb+d67rBfALsb7qRNVd2ytzSo8rx97q4r7BPfZGZbfXl6V++ulu7/LP1dXv/MZJ5CA==
   dependencies:
     "@aws-sdk/client-codecommit" "3.363.0"
     "@aws-sdk/client-ec2" "3.363.0"
@@ -4528,7 +4511,7 @@ renovate@36.14.0:
     "@opentelemetry/context-async-hooks" "1.15.0"
     "@opentelemetry/exporter-trace-otlp-http" "0.41.0"
     "@opentelemetry/instrumentation" "0.41.0"
-    "@opentelemetry/instrumentation-bunyan" "0.31.4"
+    "@opentelemetry/instrumentation-bunyan" "0.32.0"
     "@opentelemetry/instrumentation-http" "0.41.0"
     "@opentelemetry/resources" "1.15.0"
     "@opentelemetry/sdk-trace-base" "1.15.0"
@@ -4629,7 +4612,7 @@ repeat-string@^1.0.0:
   resolved "https://registry.npmjs.org/repeat-string/-/repeat-string-1.6.1.tgz"
   integrity sha512-PV0dzCYDNfRi1jCDbJzpW7jNNDRuCOG/jI5ctQcGKt/clZD+YcPS3yIlWuTJMmESC8aevCFmWJy5wjAFgNqN6w==
 
-require-in-the-middle@^7.1.0, require-in-the-middle@^7.1.1:
+require-in-the-middle@^7.1.1:
   version "7.2.0"
   resolved "https://registry.npmjs.org/require-in-the-middle/-/require-in-the-middle-7.2.0.tgz"
   integrity sha512-3TLx5TGyAY6AOqLBoXmHkNql0HIf2RGbuMgCDT2WO/uGVAPJs6h7Kl+bN6TIZGd9bWhWPwnDnTHGtW8Iu77sdw==

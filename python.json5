@@ -5,6 +5,89 @@
         groupName: "boto3",
         matchPackageNames: ["boto3", "botocore", "boto3-stubs"],
       },
+      {
+        matchPackagePatterns: ["^typing-extensions$"],
+        /**
+         * Automerge is enabled.
+         * Reason: Package Health
+         * https://snyk.io/advisor/python/typing-extensions
+         */
+        automerge: true,
+      },
+      {
+        matchPackagePatterns: ["^mypy$"],
+        /**
+         * Automerge is enabled.
+         * Reason: Package Health
+         * https://snyk.io/advisor/python/mypy
+         */
+        automerge: true,
+      },
+      {
+        matchPackagePatterns: ["^pytest$"],
+        /**
+         * Automerge is enabled.
+         * Reason: Package Health
+         * https://snyk.io/advisor/python/pytest
+         */
+        automerge: true,
+      },
+      {
+        matchPackagePatterns: ["^timevec$"],
+        /**
+         * Automerge is enabled.
+         * Reason: I am the author
+         */
+        automerge: true,
+      },
+      {
+        matchPackagePatterns: ["^cachepot$"],
+        /**
+         * Automerge is enabled.
+         * Reason: I am the author
+         */
+        automerge: true,
+      },
+      {
+        matchPackagePatterns: ["^richset$"],
+        /**
+         * Automerge is enabled.
+         * Reason: I am the author
+         */
+        automerge: true,
+      },
+      {
+        matchPackagePatterns: ["^dict-zip$"],
+        /**
+         * Automerge is enabled.
+         * Reason: I am the author
+         */
+        automerge: true,
+      },
+      {
+        matchPackagePatterns: ["^bamboo-crawler$"],
+        /**
+         * Automerge is enabled.
+         * Reason: I am the author
+         */
+        automerge: true,
+      },
+      {
+        matchPackagePatterns: ["^throttle-controller$"],
+        /**
+         * Automerge is enabled.
+         * Reason: I am the author
+         */
+        automerge: true,
+      },
+      {
+        matchPackagePatterns: ["^tally-token$"],
+        /**
+         * Automerge is enabled.
+         * Reason: I am the author
+         */
+        automerge: true,
+      },
     ],
   },
 }

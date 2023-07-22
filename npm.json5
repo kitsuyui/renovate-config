@@ -4,10 +4,59 @@
       {
         groupName: "swc",
         matchPackageNames: ["@swc/core", "@swc/jest"],
+        /**
+         * Automerge is enabled.
+         * Reason: Package Health
+         * https://snyk.io/advisor/npm-package/@swc/core
+         * https://snyk.io/advisor/npm-package/@swc/jest
+         * https://www.rust-lang.org/policies/code-of-conduct
+         */
+        automerge: true,
+      },
+      {
+        matchPackagePatterns: [
+          "^@types/node$",
+          "^@types/react$",
+          "^@types/react-dom$",
+        ],
+        /**
+         * Automerge is enabled.
+         * Reason: Package Health
+         * https://snyk.io/advisor/npm-package/@types/node
+         * https://snyk.io/advisor/npm-package/@types/react
+         *
+         * These packages are maintained by DefinitelyTyped. https://github.com/DefinitelyTyped/DefinitelyTyped
+         * PRs are well reviewed. https://github.com/DefinitelyTyped/DefinitelyTyped#definition-owners
+         */
+        automerge: true,
+      },
+      {
+        matchPackagePatterns: ["^turbo$"],
+        /**
+         * Automerge is enabled.
+         * Reason: Package Health
+         * https://snyk.io/advisor/npm-package/turbo
+         */
+        automerge: true,
+      },
+      {
+        // Defined at https://github.com/renovatebot/renovate/blob/bca81756843d1eb8f419bdb4ddfdfcf71667afc4/lib/config/presets/internal/monorepo.ts#L172-L175
+        extends: "monorepo:nextjs",
+        /**
+         * Automerge is enabled.
+         * Reason: Package Health
+         * https://snyk.io/advisor/npm-package/next
+         */
+        automerge: true,
       },
       {
         groupName: "kitsuyui-react-packages",
         matchPackagePatterns: ["^@kitsuyui/react-"],
+        /**
+         * Automerge is enabled.
+         * Reason: I am the author
+         */
+        automerge: true,
       },
     ],
   },

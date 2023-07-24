@@ -5,17 +5,13 @@
     "default:pinDigestsDisabled",
     "github>kitsuyui/renovate-config:npm.json5",
     "github>kitsuyui/renovate-config:python.json5",
-    "github>kitsuyui/renovate-config:cargo.json5"
+    "github>kitsuyui/renovate-config:cargo.json5",
+    "github>kitsuyui/renovate-config:pin.json5",
+    "github>kitsuyui/renovate-config:lockfile.json5"
   ],
   "timezone": "Asia/Tokyo",
   "schedule": [
     "before 9am every weekday",
     "every weekend"
-  ],
-  "pin": {
-    "automerge": true
-  },
-  "lockFileMaintenance": {
-    "enabled": true
-  }
+  ]
 }

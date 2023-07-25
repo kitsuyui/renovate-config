@@ -31,7 +31,8 @@
         automerge: true,
       },
       {
-        matchPackagePatterns: ["^turbo$"],
+        // Defined at https://github.com/renovatebot/renovate/blob/bca81756843d1eb8f419bdb4ddfdfcf71667afc4/lib/config/presets/internal/monorepo.ts#L257
+        extends: ["monorepo:turbo"],
         /**
          * Automerge is enabled.
          * Reason: Package Health
@@ -48,6 +49,16 @@
          * https://snyk.io/advisor/npm-package/next
          */
         automerge: true,
+      },
+      {
+        // Defined at https://github.com/renovatebot/renovate/blob/bca81756843d1eb8f419bdb4ddfdfcf71667afc4/lib/config/presets/internal/monorepo.ts#L259
+        extends: "monorepo:typescript-eslint",
+        /**
+         * Automerge is enabled.
+         * Reason: Package Health
+         * https://snyk.io/advisor/npm-package/@typescript-eslint/eslint-plugin
+         * https://snyk.io/advisor/npm-package/@typescript-eslint/parser
+         */
       },
       {
         groupName: "kitsuyui-react-packages",

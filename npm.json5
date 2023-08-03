@@ -61,6 +61,15 @@
          */
       },
       {
+        matchPackagePatterns: ["^prettier$"],
+        /**
+         * Automerge is enabled.
+         * Reason: Package Health
+         * https://snyk.io/advisor/npm-package/prettier
+         */
+        automerge: true,
+      },
+      {
         groupName: "kitsuyui-react-packages",
         matchPackagePatterns: ["^@kitsuyui/react-"],
         /**

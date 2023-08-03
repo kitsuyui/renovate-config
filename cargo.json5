@@ -29,6 +29,14 @@
         groupName: "assert_cmd",
         matchPackageNames: ["assert_cmd", "predicates"],
       },
+      {
+        matchPackagePatterns: ["^rust-codecov"],
+        /**
+         * Automerge is enabled.
+         * Reason: I am the author
+         */
+        automerge: true,
+      },
     ],
   },
 }

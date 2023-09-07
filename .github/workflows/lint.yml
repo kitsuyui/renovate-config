@@ -10,14 +10,18 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - uses: pnpm/action-setup@v2.4.0
+        with:
+          version: 8
+
       - uses: actions/setup-node@v3
         with:
           node-version: 'lts/*'
-          cache: npm
-          cache-dependency-path: ./package-lock.json
+          cache: pnpm
+          cache-dependency-path: pnpm-lock.yaml
 
       - name: Installation
-        run: npm install 
+        run: pnpm install 
 
       - name: Test
-        run: npm run validate:renovate
+        run: pnpm run validate:renovate

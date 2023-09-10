@@ -29,7 +29,8 @@ If you configure these things in each project, you will have to configure the sa
 I only enable auto merge for the following rules.
 
 1. I am the author of the package.
-2. The package health is good enough.
+2. The package is an official package of the language, framework or service.
+3. The package health is good enough.
   - Security ... Snyk score, number of vulnerabilities.
   - Popularity ... Linus's Law (given enough eyeballs, all bugs are shallow), number of downloads, Big tech's usage, etc.
   - Maintenance ... Update frequency, number of open issues, etc.

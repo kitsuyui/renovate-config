@@ -59,6 +59,16 @@
          * https://snyk.io/advisor/npm-package/@typescript-eslint/eslint-plugin
          * https://snyk.io/advisor/npm-package/@typescript-eslint/parser
          */
+         automerge: true,
+      },
+      {
+        matchPackagePatterns: ["^eslint$"],
+        /**
+         * Automerge is enabled.
+         * Reason: Package Health
+         * https://snyk.io/advisor/npm-package/eslint
+         */
+        automerge: true,
       },
       {
         matchPackagePatterns: ["^prettier$"],

@@ -6,6 +6,7 @@
     "github>kitsuyui/renovate-config:npm.json5",
     "github>kitsuyui/renovate-config:python.json5",
     "github>kitsuyui/renovate-config:cargo.json5",
+    "github>kitsuyui/renovate-config:gha.json5",
     "github>kitsuyui/renovate-config:pin.json5",
     "github>kitsuyui/renovate-config:lockfile.json5"
   ],

@@ -33,6 +33,15 @@
         automerge: true,
       },
       {
+        matchPackagePatterns: ["^black$"],
+        /**
+         * Automerge is enabled.
+         * Reason: Package Health
+         * https://snyk.io/advisor/python/black
+         */
+        automerge: true,
+      },
+      {
         matchPackagePatterns: ["^timevec$"],
         /**
          * Automerge is enabled.

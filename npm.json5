@@ -59,6 +59,7 @@
          * https://snyk.io/advisor/npm-package/@typescript-eslint/eslint-plugin
          * https://snyk.io/advisor/npm-package/@typescript-eslint/parser
          */
+         automerge: true,
       },
       {
         matchPackagePatterns: ["^eslint$"],

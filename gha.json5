@@ -1,0 +1,39 @@
+{
+  // GitHub Actions
+  github-actions: {
+    packageRules: [ 
+      {
+        matchPackagePatterns: ["^actions/checkout$"],
+        /**
+         * Automerge is enabled.
+         * Reason: Official GitHub Action.
+         */
+        automerge: true,
+      },
+      {
+        matchPackagePatterns: ["^actions/upload-artifact$"],
+        /**
+         * Automerge is enabled.
+         * Reason: Official GitHub Action.
+         */
+        automerge: true,
+      },
+      {
+        matchPackagePatterns: ["^actions/download-artifact$"],
+        /**
+         * Automerge is enabled.
+         * Reason: Official GitHub Action.
+         */
+        automerge: true,
+      },
+      {
+        matchPackagePatterns: ["^kitsuyui/happy-commit$"],
+        /**
+         * Automerge is enabled.
+         * Reason: I am the author.
+         */
+        automerge: true,
+      },
+    ],
+  },
+}

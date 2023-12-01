@@ -9,6 +9,9 @@
     "github>kitsuyui/renovate-config:pin.json5",
     "github>kitsuyui/renovate-config:lockfile.json5"
   ],
+  "git-submodules": {
+    "enabled": true
+  },
   "timezone": "Asia/Tokyo",
   "schedule": [
     "before 9am every weekday",

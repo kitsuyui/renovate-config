@@ -6,8 +6,8 @@ settings:
 
 devDependencies:
   renovate:
-    specifier: 37.128.3
-    version: 37.128.3(typanion@3.14.0)
+    specifier: 37.128.6
+    version: 37.128.6(typanion@3.14.0)
 
 packages:
 
@@ -2383,8 +2383,8 @@ packages:
       safe-json-stringify: 1.2.0
     dev: true
 
-  /cacache@18.0.1:
-    resolution: {integrity: sha512-g4Uf2CFZPaxtJKre6qr4zqLDOOPU7bNVhWjlNhvzc51xaTOx2noMOLhfFkTAqwtrAZAKQUuDfyjitzilpA8WsQ==}
+  /cacache@18.0.2:
+    resolution: {integrity: sha512-r3NU8h/P+4lVUHfeRw1dtgQYar3DZMm4/cm2bZgOvrFC/su7budSOeqh52VJIC4U4iG1WWwV6vRW0znqBvxNuw==}
     engines: {node: ^16.14.0 || >=18.0.0}
     dependencies:
       '@npmcli/fs': 3.1.0
@@ -3688,7 +3688,7 @@ packages:
     requiresBuild: true
     dependencies:
       '@npmcli/agent': 2.2.0
-      cacache: 18.0.1
+      cacache: 18.0.2
       http-cache-semantics: 4.1.1
       is-lambda: 1.0.1
       minipass: 7.0.4
@@ -4478,8 +4478,8 @@ packages:
       - supports-color
     dev: true
 
-  /renovate@37.128.3(typanion@3.14.0):
-    resolution: {integrity: sha512-x4VpZ3rkHF8Vrz+AgQkd4X3Ohqeae1kdEyv8fLHYAeRms2+V11nsWtschIWfZn79GjZLxovEwLZnWTG1bCvT5w==}
+  /renovate@37.128.6(typanion@3.14.0):
+    resolution: {integrity: sha512-rcWs00fFvIh5bedF5Wyh+iH4HFcgxZ0d04C0Rc04oka4liJJJ2zLKouVQ/HH0wRMb9rUi8FuUI+bbaGVneBF1A==}
     engines: {node: ^18.12.0 || >=20.0.0, pnpm: ^8.0.0}
     hasBin: true
     dependencies:
@@ -4516,7 +4516,7 @@ packages:
       aws4: 1.12.0
       azure-devops-node-api: 12.1.0
       bunyan: 1.8.15
-      cacache: 18.0.1
+      cacache: 18.0.2
       cacheable-lookup: 5.0.4
       chalk: 4.1.2
       changelog-filename-regex: 2.0.1

@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       renovate:
-        specifier: 37.377.6
-        version: 37.377.6(@aws-sdk/client-sso-oidc@3.583.0)(@aws-sdk/client-sts@3.565.0(@aws-sdk/client-sso-oidc@3.583.0))(encoding@0.1.13)(typanion@3.14.0)
+        specifier: 37.379.0
+        version: 37.379.0(@aws-sdk/client-sso-oidc@3.583.0)(@aws-sdk/client-sts@3.565.0(@aws-sdk/client-sso-oidc@3.583.0))(encoding@0.1.13)(typanion@3.14.0)
 
 packages:
 
@@ -2607,8 +2607,8 @@ packages:
   remark@13.0.0:
     resolution: {integrity: sha512-HDz1+IKGtOyWN+QgBiAT0kn+2s6ovOxHyPAFGKVE81VSzJ+mq7RwHFledEvB5F1p4iJvOah/LOKdFuzvRnNLCA==}
 
-  renovate@37.377.6:
-    resolution: {integrity: sha512-7Jvqde08C9su4qw5lj6iKgP0VBAymZqblLv/FW/3XofT2L2Npx44lJQ+G0vmAy53gnZPOJk+mCB/J1v+wzY1QA==}
+  renovate@37.379.0:
+    resolution: {integrity: sha512-HMAkn+s2RLF7G/qmzOJ+qrK4UR43bU6vqBIqZw1hU0z9jhHp1Jodlf3KVgHgHvXePdsED397foUpatmh7NSIRQ==}
     engines: {node: ^18.12.0 || >=20.0.0, pnpm: ^9.0.0}
     hasBin: true
 
@@ -3156,13 +3156,13 @@ snapshots:
   '@aws-crypto/crc32@3.0.0':
     dependencies:
       '@aws-crypto/util': 3.0.0
-      '@aws-sdk/types': 3.535.0
+      '@aws-sdk/types': 3.577.0
       tslib: 1.14.1
 
   '@aws-crypto/crc32c@3.0.0':
     dependencies:
       '@aws-crypto/util': 3.0.0
-      '@aws-sdk/types': 3.535.0
+      '@aws-sdk/types': 3.577.0
       tslib: 1.14.1
 
   '@aws-crypto/ie11-detection@3.0.0':
@@ -3174,7 +3174,7 @@ snapshots:
       '@aws-crypto/ie11-detection': 3.0.0
       '@aws-crypto/supports-web-crypto': 3.0.0
       '@aws-crypto/util': 3.0.0
-      '@aws-sdk/types': 3.535.0
+      '@aws-sdk/types': 3.577.0
       '@aws-sdk/util-locate-window': 3.568.0
       '@aws-sdk/util-utf8-browser': 3.259.0
       tslib: 1.14.1
@@ -3185,7 +3185,7 @@ snapshots:
       '@aws-crypto/sha256-js': 3.0.0
       '@aws-crypto/supports-web-crypto': 3.0.0
       '@aws-crypto/util': 3.0.0
-      '@aws-sdk/types': 3.535.0
+      '@aws-sdk/types': 3.577.0
       '@aws-sdk/util-locate-window': 3.568.0
       '@aws-sdk/util-utf8-browser': 3.259.0
       tslib: 1.14.1
@@ -3193,7 +3193,7 @@ snapshots:
   '@aws-crypto/sha256-js@3.0.0':
     dependencies:
       '@aws-crypto/util': 3.0.0
-      '@aws-sdk/types': 3.535.0
+      '@aws-sdk/types': 3.577.0
       tslib: 1.14.1
 
   '@aws-crypto/supports-web-crypto@3.0.0':
@@ -3202,7 +3202,7 @@ snapshots:
 
   '@aws-crypto/util@3.0.0':
     dependencies:
-      '@aws-sdk/types': 3.535.0
+      '@aws-sdk/types': 3.577.0
       '@aws-sdk/util-utf8-browser': 3.259.0
       tslib: 1.14.1
 
@@ -7046,7 +7046,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@37.377.6(@aws-sdk/client-sso-oidc@3.583.0)(@aws-sdk/client-sts@3.565.0(@aws-sdk/client-sso-oidc@3.583.0))(encoding@0.1.13)(typanion@3.14.0):
+  renovate@37.379.0(@aws-sdk/client-sso-oidc@3.583.0)(@aws-sdk/client-sts@3.565.0(@aws-sdk/client-sso-oidc@3.583.0))(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.565.0(@aws-sdk/client-sso-oidc@3.583.0)(@aws-sdk/client-sts@3.565.0(@aws-sdk/client-sso-oidc@3.583.0))
       '@aws-sdk/client-ec2': 3.565.0(@aws-sdk/client-sso-oidc@3.583.0)(@aws-sdk/client-sts@3.565.0(@aws-sdk/client-sso-oidc@3.583.0))
@@ -7091,6 +7091,7 @@ snapshots:
       deepmerge: 4.3.1
       dequal: 2.0.3
       detect-indent: 6.1.0
+      diff: 5.2.0
       editorconfig: 2.0.0
       email-addresses: 5.0.0
       emoji-regex: 10.3.0

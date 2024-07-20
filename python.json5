@@ -33,6 +33,15 @@
         automerge: true,
       },
       {
+        matchPackagePatterns: ["^ruff$"],
+        /**
+         * Automerge is enabled.
+         * Reason: Package Health
+         * https://snyk.io/advisor/python/ruff
+         */
+        automerge: true,
+      },
+      {
         matchPackagePatterns: ["^black$"],
         /**
          * Automerge is enabled.

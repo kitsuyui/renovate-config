@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       renovate:
-        specifier: 39.210.0
-        version: 39.210.0(encoding@0.1.13)(typanion@3.14.0)
+        specifier: 39.211.0
+        version: 39.211.0(encoding@0.1.13)(typanion@3.14.0)
 
 packages:
 
@@ -284,6 +284,9 @@ packages:
   '@babel/runtime-corejs3@7.26.10':
     resolution: {integrity: sha512-uITFQYO68pMEYR46AHgQoyBg7KPPJDAbGn4jUTIRgCFJIp88MIBUianVOplhZDEec07bp9zIyr4Kp0FCyQzmWg==}
     engines: {node: '>=6.9.0'}
+
+  '@baszalmstra/rattler@0.2.0':
+    resolution: {integrity: sha512-Dkcy5TXmlNvU8LAvagfBHYOFnBHlKYeBiMljG8Iln6ZmQSkeHgO3yo69A4Rs3Lv6DSH3pSrun7LHdaxv99l4tg==}
 
   '@breejs/later@4.2.0':
     resolution: {integrity: sha512-EVMD0SgJtOuFeg0lAVbCwa+qeTKILb87jqvLyUtQswGD9+ce2nB52Y5zbTF1Hc0MDFfbydcMcxb47jSdhikVHA==}
@@ -1007,8 +1010,8 @@ packages:
   base64-js@1.5.1:
     resolution: {integrity: sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==}
 
-  better-sqlite3@11.8.1:
-    resolution: {integrity: sha512-9BxNaBkblMjhJW8sMRZxnxVTRgbRmssZW0Oxc1MPBTfiR+WW21e2Mk4qu8CzrcZb1LwPCnFsfDEzq+SNcBU8eg==}
+  better-sqlite3@11.9.0:
+    resolution: {integrity: sha512-4b9xYnoaskj8eIkke9ZCB42p5bOPabptSku8Rl4Yww70Jf+aHeLvrIjXDJrKQxUEjdppsFb+fdJSjoH4TklROA==}
 
   bignumber.js@9.1.2:
     resolution: {integrity: sha512-2/mKyZH9K85bzOEfhXDBFZTGd1CTs+5IHpeFQo9luiBG7hghdC851Pj2WAhb6E3R6b9tZj/XKhbg4fum+Kepug==}
@@ -2387,8 +2390,8 @@ packages:
   remark@13.0.0:
     resolution: {integrity: sha512-HDz1+IKGtOyWN+QgBiAT0kn+2s6ovOxHyPAFGKVE81VSzJ+mq7RwHFledEvB5F1p4iJvOah/LOKdFuzvRnNLCA==}
 
-  renovate@39.210.0:
-    resolution: {integrity: sha512-3u1GvM0yxUpKpcMilyvsOB2HKExwqQhS9N0e72ZpP8h6GJhDOBSYyEdoT3KmrHirTjBFuShNe9VOSKBgvEBLuA==}
+  renovate@39.211.0:
+    resolution: {integrity: sha512-/m+9+Bceth+O6q5xOJ6H1BmYtSgbc3fdD9YEFrSpleezCeHIGs6UeMY79iABAHsTmSHB73T+4KJ9e6jJTfKcNg==}
     engines: {node: ^20.15.1 || ^22.11.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -3945,6 +3948,8 @@ snapshots:
       core-js-pure: 3.41.0
       regenerator-runtime: 0.14.1
 
+  '@baszalmstra/rattler@0.2.0': {}
+
   '@breejs/later@4.2.0': {}
 
   '@cdktf/hcl2json@0.20.11':
@@ -4853,7 +4858,7 @@ snapshots:
 
   base64-js@1.5.1: {}
 
-  better-sqlite3@11.8.1:
+  better-sqlite3@11.9.0:
     dependencies:
       bindings: 1.5.0
       prebuild-install: 7.1.3
@@ -6383,7 +6388,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@39.210.0(encoding@0.1.13)(typanion@3.14.0):
+  renovate@39.211.0(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.738.0
       '@aws-sdk/client-ec2': 3.738.0
@@ -6392,6 +6397,7 @@ snapshots:
       '@aws-sdk/client-rds': 3.740.0
       '@aws-sdk/client-s3': 3.740.0
       '@aws-sdk/credential-providers': 3.738.0
+      '@baszalmstra/rattler': 0.2.0
       '@breejs/later': 4.2.0
       '@cdktf/hcl2json': 0.20.11
       '@opentelemetry/api': 1.9.0
@@ -6497,7 +6503,7 @@ snapshots:
       yaml: 2.7.0
       zod: 3.24.2
     optionalDependencies:
-      better-sqlite3: 11.8.1
+      better-sqlite3: 11.9.0
       openpgp: 6.1.0
       re2: 1.21.4
     transitivePeerDependencies:

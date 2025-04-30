@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       renovate:
-        specifier: 39.264.0
-        version: 39.264.0(encoding@0.1.13)(typanion@3.14.0)
+        specifier: 40.0.5
+        version: 40.0.5(encoding@0.1.13)(typanion@3.14.0)
 
 packages:
 
@@ -1458,8 +1458,8 @@ packages:
     resolution: {integrity: sha512-7Bv8RF0k6xjo7d4A/PxYLbUCfb6c+Vpd2/mB2yRDlew7Jb5hEXiCD9ibfO7wpk8i4sevK6DFny9h7EYbM3/sHg==}
     hasBin: true
 
-  glob@11.0.1:
-    resolution: {integrity: sha512-zrQDm8XPnYEKawJScsnM0QzobJxlT/kHOOlRTio8IH/GrmxRE5fjllkzdaHclIuNjUQTJYH2xHNIGfdpJkDJUw==}
+  glob@11.0.2:
+    resolution: {integrity: sha512-YT7U7Vye+t5fZ/QMkBFrTJ7ZQxInIUjwyAjVj84CYXqgBdv30MFUPGnBR6sQaVq6Is15wYJUsnzTuWaGRBhBAQ==}
     engines: {node: 20 || >=22}
     hasBin: true
 
@@ -2333,9 +2333,9 @@ packages:
   remark@13.0.0:
     resolution: {integrity: sha512-HDz1+IKGtOyWN+QgBiAT0kn+2s6ovOxHyPAFGKVE81VSzJ+mq7RwHFledEvB5F1p4iJvOah/LOKdFuzvRnNLCA==}
 
-  renovate@39.264.0:
-    resolution: {integrity: sha512-/XoV0NWdwvjotd94PgQ9WU7A7/xGpUtwxwWaE78qY2ZgHjNe/+dA1v5dpJh9tqn6W/4vW38jSBjxvo6sylV5gA==}
-    engines: {node: ^20.15.1 || ^22.11.0, pnpm: ^10.0.0}
+  renovate@40.0.5:
+    resolution: {integrity: sha512-BgSF7QQ/rAipOn7Cv+4nGecXhAfKqyOWTsTR3f3TexzGzAbvx58ZmTbFbQyDrcEfHVaKZ0IA+TT87WzgqkfPPA==}
+    engines: {node: ^22.13.0, pnpm: ^10.0.0}
     hasBin: true
 
   repeat-string@1.6.1:
@@ -5130,7 +5130,7 @@ snapshots:
       package-json-from-dist: 1.0.1
       path-scurry: 1.11.1
 
-  glob@11.0.1:
+  glob@11.0.2:
     dependencies:
       foreground-child: 3.3.1
       jackspeak: 4.1.0
@@ -6110,7 +6110,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@39.264.0(encoding@0.1.13)(typanion@3.14.0):
+  renovate@40.0.5(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.777.0
       '@aws-sdk/client-ec2': 3.779.0
@@ -6176,7 +6176,7 @@ snapshots:
       fs-extra: 11.3.0
       git-url-parse: 16.1.0
       github-url-from-git: 1.5.0
-      glob: 11.0.1
+      glob: 11.0.2
       global-agent: 3.0.0
       good-enough-parser: 1.1.23
       google-auth-library: 9.15.1(encoding@0.1.13)

@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       renovate:
-        specifier: 40.62.1
-        version: 40.62.1(encoding@0.1.13)(typanion@3.14.0)
+        specifier: 41.1.1
+        version: 41.1.1(encoding@0.1.13)(typanion@3.14.0)
 
 packages:
 
@@ -237,6 +237,14 @@ packages:
   '@gwhitney/detect-indent@7.0.1':
     resolution: {integrity: sha512-7bQW+gkKa2kKZPeJf6+c6gFK9ARxQfn+FKy9ScTBppyKRWH2KzsmweXUoklqeEiHiNVWaeP5csIdsNq6w7QhzA==}
     engines: {node: '>=12.20'}
+
+  '@isaacs/balanced-match@4.0.1':
+    resolution: {integrity: sha512-yzMTt9lEb8Gv7zRioUilSglI0c0smZ9k5D65677DLWLtWJaXIS3CqcGyUFByYKlnUj6TkjLVs54fBl6+TiGQDQ==}
+    engines: {node: 20 || >=22}
+
+  '@isaacs/brace-expansion@5.0.0':
+    resolution: {integrity: sha512-ZT55BDLV0yv0RBm2czMiZ+SqCGO7AvmOM3G/w2xhVPH+te0aKgFjmBvGlL1dH+ql2tgGO3MVrbb3jCKyvpgnxA==}
+    engines: {node: 20 || >=22}
 
   '@isaacs/cliui@8.0.2':
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
@@ -1474,8 +1482,8 @@ packages:
     resolution: {integrity: sha512-7Bv8RF0k6xjo7d4A/PxYLbUCfb6c+Vpd2/mB2yRDlew7Jb5hEXiCD9ibfO7wpk8i4sevK6DFny9h7EYbM3/sHg==}
     hasBin: true
 
-  glob@11.0.2:
-    resolution: {integrity: sha512-YT7U7Vye+t5fZ/QMkBFrTJ7ZQxInIUjwyAjVj84CYXqgBdv30MFUPGnBR6sQaVq6Is15wYJUsnzTuWaGRBhBAQ==}
+  glob@11.0.3:
+    resolution: {integrity: sha512-2Nim7dha1KVkaiF4q6Dj+ngPPMdfvLJEOpZk/jKiUAkqKebpGAWQXAq9z1xu9HKu5lWfqw/FASuccEjyznjPaA==}
     engines: {node: 20 || >=22}
     hasBin: true
 
@@ -2001,6 +2009,10 @@ packages:
     resolution: {integrity: sha512-+9TJCIYXgZ2Dm5LxVCFsa8jOm+evMwXHFI0JM1XROmkfkpz8/iLLDh+TwSmyIBrs6C6Xu9294/fq8cBA+P6AqA==}
     engines: {node: 20 || >=22}
 
+  minimatch@10.0.3:
+    resolution: {integrity: sha512-IPZ167aShDZZUMdRk66cyQAW3qr0WzbHkPdMYa8bzZhlHhO3jALbKdxcaak7W9FfT2rZNpQuUu4Od7ILEpXSaw==}
+    engines: {node: 20 || >=22}
+
   minimatch@3.1.2:
     resolution: {integrity: sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==}
 
@@ -2400,8 +2412,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@40.62.1:
-    resolution: {integrity: sha512-KAdlisMjntg+6vQtxkyYS/SLpXYqw4Abrw748VfZtdr07khw0NymM+MmGFBUwci9VP77s7hhdzxvlwhgSMYtLg==}
+  renovate@41.1.1:
+    resolution: {integrity: sha512-eWr2u2p2laxQtEfaH5sbe09MiCxCnAjdJwqsDEkWW7Qaz+r+hhnHARSRCo0jD/kPg43h0SiqkdX6PjESu7BNHg==}
     engines: {node: ^22.13.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -3733,6 +3745,12 @@ snapshots:
       fs-extra: 11.3.0
 
   '@gwhitney/detect-indent@7.0.1': {}
+
+  '@isaacs/balanced-match@4.0.1': {}
+
+  '@isaacs/brace-expansion@5.0.0':
+    dependencies:
+      '@isaacs/balanced-match': 4.0.1
 
   '@isaacs/cliui@8.0.2':
     dependencies:
@@ -5187,11 +5205,11 @@ snapshots:
       package-json-from-dist: 1.0.1
       path-scurry: 1.11.1
 
-  glob@11.0.2:
+  glob@11.0.3:
     dependencies:
       foreground-child: 3.3.1
       jackspeak: 4.1.1
-      minimatch: 10.0.2
+      minimatch: 10.0.3
       minipass: 7.1.2
       package-json-from-dist: 1.0.1
       path-scurry: 2.0.0
@@ -5848,6 +5866,10 @@ snapshots:
     dependencies:
       brace-expansion: 4.0.1
 
+  minimatch@10.0.3:
+    dependencies:
+      '@isaacs/brace-expansion': 5.0.0
+
   minimatch@3.1.2:
     dependencies:
       brace-expansion: 1.1.12
@@ -6295,7 +6317,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@40.62.1(encoding@0.1.13)(typanion@3.14.0):
+  renovate@41.1.1(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.821.0
       '@aws-sdk/client-ec2': 3.821.0
@@ -6360,7 +6382,7 @@ snapshots:
       fs-extra: 11.3.0
       git-url-parse: 16.1.0
       github-url-from-git: 1.5.0
-      glob: 11.0.2
+      glob: 11.0.3
       global-agent: 3.0.0
       good-enough-parser: 1.1.23
       google-auth-library: 9.15.1(encoding@0.1.13)

@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       renovate:
-        specifier: 41.51.1
-        version: 41.51.1(encoding@0.1.13)(typanion@3.14.0)
+        specifier: 41.52.0
+        version: 41.52.0(encoding@0.1.13)(typanion@3.14.0)
 
 packages:
 
@@ -1028,6 +1028,10 @@ packages:
     resolution: {integrity: sha512-hdsUxulXCi5STId78vRVYEtDAjq99ICAUktLTeTYsLoTE6Z8dS0c8pWNCxwdrk9YfJeobDZc2Y186hD/5ZQgFQ==}
     engines: {node: ^18.17.0 || >=20.5.0}
 
+  cacache@20.0.0:
+    resolution: {integrity: sha512-2Js2sNgHK36Fdu3ItpQqJjwUXAURb0uyo9i83Tr2wUQINU4tPl4AtQYh6mCqwVFV5W8+Vgcna+bSTQeyPLG/sQ==}
+    engines: {node: ^20.17.0 || >=22.9.0}
+
   cacheable-lookup@5.0.4:
     resolution: {integrity: sha512-2/kNscPhpcxrOigMZzbiWF7dz8ilhb/nIHU3EyZiXWXpeq/au8qJ8VhdftMkty3n7Gj6HIGalQG8oiBNB3AJgA==}
     engines: {node: '>=10.6.0'}
@@ -1132,9 +1136,8 @@ packages:
     resolution: {integrity: sha512-p9nwwR4qyT5W996vBZhdvBCnMhicY5ytZkR4D1Xj0wuTDEiMnjwR57Q3RXYY/s0EpX6Ay3vgIcfaR+ewGHsi+g==}
     engines: {node: '>=18.0'}
 
-  cronstrue@2.61.0:
-    resolution: {integrity: sha512-ootN5bvXbIQI9rW94+QsXN5eROtXWwew6NkdGxIRpS/UFWRggL0G5Al7a9GTBFEsuvVhJ2K3CntIIVt7L2ILhA==}
-    deprecated: Non-backwards compatible Breaking changes
+  cronstrue@3.2.0:
+    resolution: {integrity: sha512-CqpqV5bCei+jmKyIw2Wihz+npXDuSkeExWCItEn5hlpD8+QFMXUU2YW5W3Vh/hFxWwzWhguoGXm5gl1os+L2Hw==}
     hasBin: true
 
   cross-spawn@7.0.6:
@@ -2431,8 +2434,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@41.51.1:
-    resolution: {integrity: sha512-J8MNSucUDoSKHUwSuoOpj0TWeg+tcpaVLwWf+L+wqqREAVbEJ6cAHwY1++HwrxtmqPG1xrIU1k1sw2ap5IpRLg==}
+  renovate@41.52.0:
+    resolution: {integrity: sha512-6ioCswI8X+2ORcNWT+1N20UK7TzYv1lMP6RlYjqRvAwtDWX9KYMiNxE+lnbst1pDM3yF4cUTMjqGoFTwokPohg==}
     engines: {node: ^22.13.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -2533,8 +2536,8 @@ packages:
     resolution: {integrity: sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==}
     engines: {node: '>=8'}
 
-  shlex@2.1.2:
-    resolution: {integrity: sha512-Nz6gtibMVgYeMEhUjp2KuwAgqaJA1K155dU/HuDaEJUGgnmYfVtVZah+uerVWdH8UGnyahhDCgABbYTbs254+w==}
+  shlex@3.0.0:
+    resolution: {integrity: sha512-jHPXQQk9d/QXCvJuLPYMOYWez3c43sORAgcIEoV7bFv5AJSJRAOyw5lQO12PMfd385qiLRCaDt7OtEzgrIGZUA==}
 
   side-channel-list@1.0.0:
     resolution: {integrity: sha512-FCLHtRD/gnpCiCHEiJLOwdmFP+wzCmDEkc9y7NsYxeF4u7Btsn1ZuwgwJGxImImHicJArLP4R0yX4c2KCrMrTA==}
@@ -4779,6 +4782,22 @@ snapshots:
       ssri: 12.0.0
       tar: 7.4.3
       unique-filename: 4.0.0
+    optional: true
+
+  cacache@20.0.0:
+    dependencies:
+      '@npmcli/fs': 4.0.0
+      fs-minipass: 3.0.3
+      glob: 11.0.3
+      lru-cache: 11.1.0
+      minipass: 7.1.2
+      minipass-collect: 2.0.1
+      minipass-flush: 1.0.5
+      minipass-pipeline: 1.2.4
+      p-map: 7.0.3
+      ssri: 12.0.0
+      tar: 7.4.3
+      unique-filename: 4.0.0
 
   cacheable-lookup@5.0.4: {}
 
@@ -4875,7 +4894,7 @@ snapshots:
 
   croner@9.1.0: {}
 
-  cronstrue@2.61.0: {}
+  cronstrue@3.2.0: {}
 
   cross-spawn@7.0.6:
     dependencies:
@@ -5258,6 +5277,7 @@ snapshots:
       minipass: 7.1.2
       package-json-from-dist: 1.0.1
       path-scurry: 1.11.1
+    optional: true
 
   glob@11.0.3:
     dependencies:
@@ -5534,6 +5554,7 @@ snapshots:
       '@isaacs/cliui': 8.0.2
     optionalDependencies:
       '@pkgjs/parseargs': 0.11.0
+    optional: true
 
   jackspeak@4.1.1:
     dependencies:
@@ -5642,7 +5663,8 @@ snapshots:
 
   lowercase-keys@2.0.0: {}
 
-  lru-cache@10.4.3: {}
+  lru-cache@10.4.3:
+    optional: true
 
   lru-cache@11.1.0: {}
 
@@ -5929,6 +5951,7 @@ snapshots:
   minimatch@9.0.5:
     dependencies:
       brace-expansion: 2.0.2
+    optional: true
 
   minimist-options@4.1.0:
     dependencies:
@@ -6187,6 +6210,7 @@ snapshots:
     dependencies:
       lru-cache: 10.4.3
       minipass: 7.1.2
+    optional: true
 
   path-scurry@2.0.0:
     dependencies:
@@ -6376,7 +6400,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@41.51.1(encoding@0.1.13)(typanion@3.14.0):
+  renovate@41.52.0(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.858.0
       '@aws-sdk/client-ec2': 3.858.0
@@ -6418,14 +6442,14 @@ snapshots:
       aws4: 1.13.2
       azure-devops-node-api: 15.1.0
       bunyan: 1.8.15
-      cacache: 19.0.1
+      cacache: 20.0.0
       chalk: 5.4.1
       changelog-filename-regex: 2.0.1
       clean-git-ref: 2.0.1
       commander: 14.0.0
       conventional-commits-detector: 1.0.3
       croner: 9.1.0
-      cronstrue: 2.61.0
+      cronstrue: 3.2.0
       deepmerge: 4.3.1
       dequal: 2.0.3
       detect-indent: 7.0.1
@@ -6481,7 +6505,7 @@ snapshots:
       semver: 7.7.2
       semver-stable: 3.0.0
       semver-utils: 1.1.4
-      shlex: 2.1.2
+      shlex: 3.0.0
       simple-git: 3.28.0
       slugify: 1.6.6
       source-map-support: 0.5.21
@@ -6601,7 +6625,7 @@ snapshots:
 
   shebang-regex@3.0.0: {}
 
-  shlex@2.1.2: {}
+  shlex@3.0.0: {}
 
   side-channel-list@1.0.0:
     dependencies:

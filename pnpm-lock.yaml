@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       renovate:
-        specifier: 41.58.2
-        version: 41.58.2(encoding@0.1.13)(typanion@3.14.0)
+        specifier: 41.60.2
+        version: 41.60.2(encoding@0.1.13)(typanion@3.14.0)
 
 packages:
 
@@ -949,8 +949,8 @@ packages:
   aws4@1.13.2:
     resolution: {integrity: sha512-lHe62zvbTB5eEABUVi/AwVh0ZKY9rMMDhmm+eeyuuUQbQ3+J+fONVQOZyj+DdrvD4BY33uYniyRJ4UJIaSKAfw==}
 
-  azure-devops-node-api@15.1.0:
-    resolution: {integrity: sha512-zlZ387CISkSKK1vjBv53kzR5fnzA60SxYrejypZawefZWvrjC28zyM/iKSP5b+iYl+Z7OOlm+Rgl6YsMecK6fg==}
+  azure-devops-node-api@15.1.1:
+    resolution: {integrity: sha512-ohL2CY+zRAItKvwkHhefYxjr0Hndu6s8qKwyl0+wL4Ol6c4UrsI3A3G6ZPwwK81c1Ga3dEXjeDg4aKV4hn9loA==}
     engines: {node: '>= 16.0.0'}
 
   backslash@0.2.0:
@@ -2434,8 +2434,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@41.58.2:
-    resolution: {integrity: sha512-NimwGcLTmprsSYtHJN6Vlem4Hl9z9tPQ/1aCeuzvsHedwqZn68QVkNKs8quQU9JYXMk6gHxC5tKr4hvmnukcXw==}
+  renovate@41.60.2:
+    resolution: {integrity: sha512-aczdYcUEHbhLo3yGYGBb9oCiy4mtZlc2eQwCljXc7f/hWrCndR45sKhiHuih27NYlGLMJrrfK/07/7HVH4wQhw==}
     engines: {node: ^22.13.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -4688,7 +4688,7 @@ snapshots:
 
   aws4@1.13.2: {}
 
-  azure-devops-node-api@15.1.0:
+  azure-devops-node-api@15.1.1:
     dependencies:
       tunnel: 0.0.6
       typed-rest-client: 2.1.0
@@ -6400,7 +6400,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@41.58.2(encoding@0.1.13)(typanion@3.14.0):
+  renovate@41.60.2(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.858.0
       '@aws-sdk/client-ec2': 3.858.0
@@ -6440,7 +6440,7 @@ snapshots:
       async-mutex: 0.5.0
       auth-header: 1.0.0
       aws4: 1.13.2
-      azure-devops-node-api: 15.1.0
+      azure-devops-node-api: 15.1.1
       bunyan: 1.8.15
       cacache: 20.0.0
       chalk: 5.4.1

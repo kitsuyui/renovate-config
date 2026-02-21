@@ -1,5 +1,7 @@
 # renovate-config
 
+![Coverage](https://raw.githubusercontent.com/kitsuyui/octocov-central/main/badges/kitsuyui/renovate-config/coverage.svg)
+
 This repository contains common configuration for renovate.
 You can use this common configuration by specifying this repository as `extends` in your renovate.json.
 

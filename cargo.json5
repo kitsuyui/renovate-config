@@ -2,6 +2,26 @@
   cargo: {
     packageRules: [
       {
+        /**
+         * Keep the default quarantine window for crates.io updates.
+         *
+         * Docs:
+         * - Renovate Minimum Release Age
+         *   https://docs.renovatebot.com/key-concepts/minimum-release-age/
+         * - crates.io now publishes RustSec advisories when malicious crates are removed
+         *   https://blog.rust-lang.org/2026/02/13/crates.io-malicious-crate-update/
+         * - crates.io removes malicious crates when the Rust security team is made aware of them
+         *   https://blog.rust-lang.org/2022/05/10/malicious-crate-rustdecimal/
+         *
+         * Inference:
+         * - crates.io documents response mechanisms, but no fixed public review/removal SLA is cited here.
+         *   Keep the default 3 day quarantine window.
+         */
+        matchDatasources: ["crate"],
+        internalChecksFilter: "strict",
+        minimumReleaseAge: "3 days",
+      },
+      {
         groupName: "serde",
         matchPackageNames: [
           "serde",

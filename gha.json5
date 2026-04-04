@@ -1,7 +1,27 @@
 {
   // GitHub Actions
-  github-actions: {
+  "github-actions": {
     packageRules: [ 
+      {
+        /**
+         * Keep the default quarantine window for GitHub Actions updates.
+         *
+         * Docs:
+         * - Renovate Minimum Release Age
+         *   https://docs.renovatebot.com/key-concepts/minimum-release-age/
+         * - GitHub lets repositories and organizations restrict which actions can run
+         *   https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository
+         * - GitHub can require actions to be pinned to a full-length commit SHA
+         *   https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository
+         *
+         * Inference:
+         * - GitHub documents governance controls, but no fixed public Marketplace malware review SLA is cited here.
+         *   Keep the default 3 day quarantine window.
+         */
+        matchDatasources: ["github-tags"],
+        internalChecksFilter: "strict",
+        minimumReleaseAge: "3 days",
+      },
       {
         matchPackagePatterns: ["^actions/checkout$"],
         /**

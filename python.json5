@@ -3,7 +3,7 @@
     packageRules: [
       {
         /**
-         * Delay PyPI updates briefly, but shorter than npm.
+         * Delay PyPI updates briefly, but keep a 48 hour quarantine window.
          *
          * Docs:
          * - Renovate Minimum Release Age
@@ -17,7 +17,7 @@
          */
         matchDatasources: ["pypi"],
         internalChecksFilter: "strict",
-        minimumReleaseAge: "1 day",
+        minimumReleaseAge: "2 days",
       },
       {
         groupName: "boto3",

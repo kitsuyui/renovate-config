@@ -2,6 +2,22 @@
   npm: {
     packageRules: [
       {
+        /**
+         * Delay npm updates for a short quarantine window.
+         *
+         * Docs:
+         * - Renovate Minimum Release Age
+         *   https://docs.renovatebot.com/key-concepts/minimum-release-age/
+         * - Renovate security preset for npm uses 3 days
+         *   https://docs.renovatebot.com/presets-security/#securityminimumreleaseagenpm
+         * - npm unpublish policy allows newly created packages to be unpublished within 72 hours
+         *   https://docs.npmjs.com/policies/unpublish/
+         */
+        matchDatasources: ["npm"],
+        internalChecksFilter: "strict",
+        minimumReleaseAge: "3 days",
+      },
+      {
         groupName: "swc",
         matchPackageNames: ["@swc/core", "@swc/jest"],
         /**

@@ -2,6 +2,24 @@
   python: {
     packageRules: [
       {
+        /**
+         * Delay PyPI updates briefly, but keep a 48 hour quarantine window.
+         *
+         * Docs:
+         * - Renovate Minimum Release Age
+         *   https://docs.renovatebot.com/key-concepts/minimum-release-age/
+         * - PyPI supports yanking as a non-destructive alternative to deletion
+         *   https://docs.pypi.org/project-management/yanking/
+         * - PyPI requires 2FA for all users since 2024-01-01
+         *   https://blog.pypi.org/posts/2023-12-13-2fa-enforcement/
+         * - PyPI security reports are acknowledged within 48 hours
+         *   https://pypi.org/security/
+         */
+        matchDatasources: ["pypi"],
+        internalChecksFilter: "strict",
+        minimumReleaseAge: "2 days",
+      },
+      {
         groupName: "boto3",
         matchPackageNames: ["boto3", "botocore", "boto3-stubs"],
       },

@@ -26,31 +26,17 @@ If you configure these things in each project, you will have to configure the sa
 
 ### Minimum release age policy
 
-This preset adds a short quarantine window before newly published releases are proposed by Renovate.
+This repository keeps only the applied configuration values.
+The source-of-truth document for the policy rationale and official ecosystem references is:
+
+- https://github.com/kitsuyui/kitsuyui/wiki/Official-Information-for-Dependency-Update-Policies
+
+Current values in this preset:
 
 - `npm`: `3 days`
 - `pypi`: `2 days`
 - `cargo`: `3 days`
 - `github-actions`: `3 days`
-
-The main reference is Renovate's `minimumReleaseAge` feature:
-
-- https://docs.renovatebot.com/key-concepts/minimum-release-age/
-
-The current defaults are chosen with the following official references in mind:
-
-- `npm`: keep `3 days` to align with Renovate's npm security preset and npm's 72 hour unpublish window
-  - https://docs.renovatebot.com/presets-security/#securityminimumreleaseagenpm
-  - https://docs.npmjs.com/policies/unpublish/
-- `pypi`: use `2 days` because PyPI states that security reports are acknowledged within 48 hours
-  - https://pypi.org/security/
-  - https://docs.pypi.org/project-management/yanking/
-  - https://blog.pypi.org/posts/2023-12-13-2fa-enforcement/
-- `cargo`: use the default `3 days` because crates.io documents removal/advisory processes, but this repository does not rely on a fixed public review SLA
-  - https://blog.rust-lang.org/2026/02/13/crates.io-malicious-crate-update/
-  - https://blog.rust-lang.org/2022/05/10/malicious-crate-rustdecimal/
-- `github-actions`: use the default `3 days` because GitHub documents governance controls, but this repository does not rely on a fixed public Marketplace review SLA
-  - https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository
 
 ### Auto merge policy
 

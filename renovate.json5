@@ -12,8 +12,8 @@
       "matchDepTypes": [
         "devDependencies"
       ],
-      "matchPackagePatterns": [
-        "renovate"
+      "matchPackageNames": [
+        "/renovate/"
       ],
       "automerge": true
     }

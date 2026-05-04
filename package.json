@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "validate:renovate": "renovate-config-validator default.json renovate.json5"
+    "validate:renovate": "renovate-config-validator default.json *.json5"
   },
   "devDependencies": {
     "renovate": "43.29.2"

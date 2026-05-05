@@ -1,5 +1,8 @@
 {
   // GitHub Actions
+  extends: [
+    "helpers:pinGitHubActionDigests",
+  ],
   "github-actions": {
     packageRules: [ 
       {

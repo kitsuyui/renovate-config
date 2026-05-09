@@ -2,6 +2,9 @@ name: Test renovate.json configuration
 on:
   - pull_request
 
+permissions:
+  contents: read
+
 jobs:
   validate:
     name: Validate

@@ -57,6 +57,14 @@
          */
         automerge: true,
       },
+      {
+        matchPackagePatterns: ["^kitsuyui/gh-actions-workflows$"],
+        /**
+         * Automerge is enabled.
+         * Reason: I am the author.
+         */
+        automerge: true,
+      },
     ],
   },
 }

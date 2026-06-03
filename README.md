@@ -12,6 +12,36 @@ You can use this common configuration by specifying this repository as `extends`
 }
 ```
 
+### Preset files
+
+The following preset files are available for individual `extends` references.
+Use `github>kitsuyui/renovate-config:<filename>` to apply a specific preset without enabling all defaults.
+
+| File | Extends syntax | Description |
+| --- | --- | --- |
+| `cargo.json5` | `github>kitsuyui/renovate-config:cargo.json5` | Rust/Cargo: minimumReleaseAge 3 days, groups for serde / pyo3 / clap / assert_cmd, automerge for own crates |
+| `gha.json5` | `github>kitsuyui/renovate-config:gha.json5` | GitHub Actions: pin digests to immutable SHAs, minimumReleaseAge 3 days, automerge for official/trusted actions |
+| `lockfile.json5` | `github>kitsuyui/renovate-config:lockfile.json5` | Enable lock file maintenance with automerge |
+| `npm.json5` | `github>kitsuyui/renovate-config:npm.json5` | npm: minimumReleaseAge 3 days, automerge for swc / @types / turbo / Next.js / typescript-eslint / eslint / prettier / own packages |
+| `pin.json5` | `github>kitsuyui/renovate-config:pin.json5` | Enable automerge for pinning updates |
+| `python.json5` | `github>kitsuyui/renovate-config:python.json5` | PyPI: minimumReleaseAge 2 days, boto3 group, automerge for typing-extensions / mypy / pytest / ruff / black / own packages |
+
+Example: apply only the npm preset alongside the default:
+
+```json
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "github>kitsuyui/renovate-config",
+    "github>kitsuyui/renovate-config:npm.json5"
+  ]
+}
+```
+
+> **Breaking changes**: This repository does not currently provide versioned releases.
+> Preset changes take effect immediately for all consumers.
+> Watch this repository or pin to a specific commit SHA in your `extends` path to avoid unexpected changes.
+
 ### Policy
 
 I recommend to configure renovate in each project.

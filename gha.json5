@@ -21,7 +21,7 @@
          * - GitHub documents governance controls, but no fixed public Marketplace malware review SLA is cited here.
          *   Keep the default 3 day quarantine window.
          */
-        matchDatasources: ["github-tags"],
+        matchDatasources: ["github-tags", "github-releases"],
         internalChecksFilter: "strict",
         minimumReleaseAge: "3 days",
       },

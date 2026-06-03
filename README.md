@@ -24,6 +24,27 @@ For example, the following things.
 
 If you configure these things in each project, you will have to configure the same thing in multiple projects.
 
+### Versioning and live updates
+
+This repository has **no versioned releases**. All sub-preset references in
+`default.json` (`github>kitsuyui/renovate-config:<file>`) point to the default
+branch without SHA pinning. This is intentional: changes take effect
+immediately for all consumers.
+
+If you need a stable, reproducible configuration, pin the reference in your
+own config file using the commit SHA:
+
+```json
+{
+  "extends": [
+    "github>kitsuyui/renovate-config@<commit-sha>"
+  ]
+}
+```
+
+See the [Renovate docs on presets](https://docs.renovatebot.com/config-presets/)
+for details on how SHA pinning works for `github>` references.
+
 ### Minimum release age policy
 
 This repository keeps only the applied configuration values.

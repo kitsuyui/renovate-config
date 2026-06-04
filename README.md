@@ -45,6 +45,23 @@ own config file using the commit SHA:
 See the [Renovate docs on presets](https://docs.renovatebot.com/config-presets/)
 for details on how SHA pinning works for `github>` references.
 
+### Schedule and timezone
+
+This preset includes a `timezone` and `schedule` that are inherited by all consumers:
+
+- `timezone`: `Asia/Tokyo` (JST, UTC+9)
+- `schedule`: `["before 9am every weekday", "every weekend"]`
+
+Renovate interprets `schedule` relative to the configured `timezone`. If your project is not in JST, Renovate PRs will arrive at times that do not correspond to your local working hours. To override, add these fields to your own `renovate.json`:
+
+```json
+{
+  "extends": ["github>kitsuyui/renovate-config"],
+  "timezone": "America/New_York",
+  "schedule": ["before 9am every weekday"]
+}
+```
+
 ### Minimum release age policy
 
 This repository keeps only the applied configuration values.

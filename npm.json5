@@ -98,8 +98,10 @@
         /**
          * Automerge is enabled.
          * Reason: I am the author
+         * Major version bumps are excluded to require explicit review.
          */
         automerge: true,
+        matchUpdateTypes: ["minor", "patch"],
       },
     ],
   },

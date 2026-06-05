@@ -30,11 +30,7 @@
         automerge: true,
       },
       {
-        matchPackagePatterns: [
-          "^@types/node$",
-          "^@types/react$",
-          "^@types/react-dom$",
-        ],
+        matchPackageNames: ["@types/node", "@types/react", "@types/react-dom"],
         /**
          * Automerge is enabled.
          * Reason: Package Health
@@ -78,16 +74,17 @@
          automerge: true,
       },
       {
-        matchPackagePatterns: ["^eslint$"],
+        matchPackageNames: ["eslint", "@eslint/js"],
         /**
          * Automerge is enabled.
          * Reason: Package Health
          * https://snyk.io/advisor/npm-package/eslint
+         * https://snyk.io/advisor/npm-package/@eslint/js
          */
         automerge: true,
       },
       {
-        matchPackagePatterns: ["^prettier$"],
+        matchPackageNames: ["prettier"],
         /**
          * Automerge is enabled.
          * Reason: Package Health

@@ -23,12 +23,6 @@
       },
       {
         groupName: "serde",
-        matchPackageNames: [
-          "serde",
-          "serde_derive",
-          "serde_json",
-          "serde_yaml",
-        ],
         matchPackagePatterns: ["^serde"],
       },
       {

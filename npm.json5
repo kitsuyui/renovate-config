@@ -94,7 +94,7 @@
       },
       {
         groupName: "kitsuyui-react-packages",
-        matchPackagePatterns: ["^@kitsuyui/react-"],
+        matchPackageNames: ["/^@kitsuyui\\/react-/"],
         /**
          * Automerge is enabled.
          * Reason: I am the author

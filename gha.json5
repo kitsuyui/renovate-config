@@ -26,7 +26,7 @@
         minimumReleaseAge: "3 days",
       },
       {
-        matchPackagePatterns: ["^actions/checkout$"],
+        matchPackageNames: ["actions/checkout"],
         /**
          * Automerge is enabled.
          * Reason: Official GitHub Action.
@@ -34,7 +34,7 @@
         automerge: true,
       },
       {
-        matchPackagePatterns: ["^actions/upload-artifact$"],
+        matchPackageNames: ["actions/upload-artifact"],
         /**
          * Automerge is enabled.
          * Reason: Official GitHub Action.
@@ -42,7 +42,7 @@
         automerge: true,
       },
       {
-        matchPackagePatterns: ["^actions/download-artifact$"],
+        matchPackageNames: ["actions/download-artifact"],
         /**
          * Automerge is enabled.
          * Reason: Official GitHub Action.
@@ -50,7 +50,7 @@
         automerge: true,
       },
       {
-        matchPackagePatterns: ["^kitsuyui/happy-commit$"],
+        matchPackageNames: ["kitsuyui/happy-commit"],
         /**
          * Automerge is enabled.
          * Reason: I am the author.
@@ -60,7 +60,7 @@
         matchUpdateTypes: ["minor", "patch"],
       },
       {
-        matchPackagePatterns: ["^kitsuyui/gh-actions-workflows$"],
+        matchPackageNames: ["kitsuyui/gh-actions-workflows"],
         /**
          * Automerge is enabled.
          * Reason: I am the author.

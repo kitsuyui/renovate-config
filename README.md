@@ -69,12 +69,8 @@ The source-of-truth document for the policy rationale and official ecosystem ref
 
 - https://github.com/kitsuyui/kitsuyui/wiki/Official-Information-for-Dependency-Update-Policies
 
-Current values in this preset:
-
-- `npm`: `3 days`
-- `pypi`: `2 days`
-- `cargo`: `3 days`
-- `github-actions`: `3 days`
+Current values are defined directly in each preset file (`npm.json5`, `python.json5`,
+`cargo.json5`, `gha.json5`) in the `minimumReleaseAge` field.
 
 ### Auto merge policy
 

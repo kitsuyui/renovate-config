@@ -23,7 +23,7 @@
       },
       {
         groupName: "serde",
-        matchPackagePatterns: ["^serde"],
+        matchPackageNames: ["/^serde/"],
       },
       {
         groupName: "pyo3",
@@ -44,7 +44,7 @@
         matchPackageNames: ["assert_cmd", "predicates"],
       },
       {
-        matchPackagePatterns: ["^rust-codecov"],
+        matchPackageNames: ["/^rust-codecov/"],
         /**
          * Automerge is enabled.
          * Reason: I am the author

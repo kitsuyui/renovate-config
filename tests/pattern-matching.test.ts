@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'bun:test'
 
-// Renovate evaluates matchPackagePatterns entries as regexes via new RegExp(p).test(name).
+// Renovate evaluates matchPackageNames regex entries (e.g. "/^serde/") via new RegExp(p).test(name).
+// Exact-name entries in matchPackageNames are matched by string equality in Renovate itself.
 function matchesPattern(pattern: string, packageName: string): boolean {
   return new RegExp(pattern).test(packageName)
 }
@@ -10,9 +11,10 @@ function matchesAny(patterns: string[], packageName: string): boolean {
   return patterns.some((p) => matchesPattern(p, packageName))
 }
 
-// npm.json5 — matchPackagePatterns coverage
-describe('npm.json5 matchPackagePatterns', () => {
-  describe('^@types/node$, ^@types/react$, ^@types/react-dom$', () => {
+// npm.json5 — matchPackageNames coverage
+describe('npm.json5 matchPackageNames', () => {
+  describe('@types/node, @types/react, @types/react-dom (exact names)', () => {
+    // Now exact-name matches via matchPackageNames; tested here via equivalent regex
     const patterns = ['^@types/node$', '^@types/react$', '^@types/react-dom$']
 
     it('matches @types/node', () =>
@@ -21,31 +23,29 @@ describe('npm.json5 matchPackagePatterns', () => {
       expect(matchesAny(patterns, '@types/react')).toBe(true))
     it('matches @types/react-dom', () =>
       expect(matchesAny(patterns, '@types/react-dom')).toBe(true))
-    // Anchored patterns must not bleed into unintended packages
+    // Exact names must not bleed into unintended packages
     it('does not match @types/node-forge', () =>
       expect(matchesAny(patterns, '@types/node-forge')).toBe(false))
     it('does not match @types/react-router', () =>
       expect(matchesAny(patterns, '@types/react-router')).toBe(false))
   })
 
-  describe('^eslint$', () => {
-    const pattern = '^eslint$'
+  describe('eslint, @eslint/js (exact names)', () => {
+    // Both eslint and @eslint/js are now covered via matchPackageNames exact matching
+    const patterns = ['^eslint$', '^@eslint/js$']
 
     it('matches eslint', () =>
-      expect(matchesPattern(pattern, 'eslint')).toBe(true))
-    // Anchored: must not match eslint plugins or scoped packages
+      expect(matchesAny(patterns, 'eslint')).toBe(true))
+    it('matches @eslint/js', () =>
+      expect(matchesAny(patterns, '@eslint/js')).toBe(true))
+    // Exact names must not match eslint plugins or scoped packages
     it('does not match eslint-plugin-react', () =>
-      expect(matchesPattern(pattern, 'eslint-plugin-react')).toBe(false))
+      expect(matchesAny(patterns, 'eslint-plugin-react')).toBe(false))
     it('does not match eslint-config-prettier', () =>
-      expect(matchesPattern(pattern, 'eslint-config-prettier')).toBe(false))
-    // @eslint/js is the eslint v9+ official config package.
-    // The current pattern does not cover it; update this test and the
-    // matching rule together if @eslint/js automerge is intended.
-    it('does not match @eslint/js (current behavior — update if intent changes)', () =>
-      expect(matchesPattern(pattern, '@eslint/js')).toBe(false))
+      expect(matchesAny(patterns, 'eslint-config-prettier')).toBe(false))
   })
 
-  describe('^prettier$', () => {
+  describe('prettier (exact name)', () => {
     const pattern = '^prettier$'
 
     it('matches prettier', () =>
@@ -58,7 +58,8 @@ describe('npm.json5 matchPackagePatterns', () => {
       expect(matchesPattern(pattern, '@prettier/plugin-ruby')).toBe(false))
   })
 
-  describe('^@kitsuyui/react-', () => {
+  describe('/^@kitsuyui\\/react-/ (regex prefix)', () => {
+    // matchPackageNames: ["/^@kitsuyui\\/react-/"] — prefix regex
     const pattern = '^@kitsuyui/react-'
 
     it('matches @kitsuyui/react-components', () =>
@@ -72,9 +73,9 @@ describe('npm.json5 matchPackagePatterns', () => {
   })
 })
 
-// gha.json5 — matchPackagePatterns coverage (github-actions datasource)
-describe('gha.json5 matchPackagePatterns', () => {
-  describe('^actions/checkout$', () => {
+// gha.json5 — matchPackageNames coverage (github-actions datasource)
+describe('gha.json5 matchPackageNames', () => {
+  describe('actions/checkout (exact name)', () => {
     const pattern = '^actions/checkout$'
 
     it('matches actions/checkout', () =>
@@ -83,7 +84,7 @@ describe('gha.json5 matchPackagePatterns', () => {
       expect(matchesPattern(pattern, 'actions/checkout-private')).toBe(false))
   })
 
-  describe('^actions/upload-artifact$', () => {
+  describe('actions/upload-artifact (exact name)', () => {
     const pattern = '^actions/upload-artifact$'
 
     it('matches actions/upload-artifact', () =>
@@ -94,7 +95,7 @@ describe('gha.json5 matchPackagePatterns', () => {
       ))
   })
 
-  describe('^actions/download-artifact$', () => {
+  describe('actions/download-artifact (exact name)', () => {
     const pattern = '^actions/download-artifact$'
 
     it('matches actions/download-artifact', () =>

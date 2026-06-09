@@ -24,7 +24,7 @@
         matchPackageNames: ["boto3", "botocore", "boto3-stubs"],
       },
       {
-        matchPackagePatterns: ["^typing-extensions$"],
+        matchPackageNames: ["typing-extensions"],
         /**
          * Automerge is enabled.
          * Reason: Package Health
@@ -33,7 +33,7 @@
         automerge: true,
       },
       {
-        matchPackagePatterns: ["^mypy$"],
+        matchPackageNames: ["mypy"],
         /**
          * Automerge is enabled.
          * Reason: Package Health
@@ -42,7 +42,7 @@
         automerge: true,
       },
       {
-        matchPackagePatterns: ["^pytest$"],
+        matchPackageNames: ["pytest"],
         /**
          * Automerge is enabled.
          * Reason: Package Health
@@ -51,7 +51,7 @@
         automerge: true,
       },
       {
-        matchPackagePatterns: ["^ruff$"],
+        matchPackageNames: ["ruff"],
         /**
          * Automerge is enabled.
          * Reason: Package Health
@@ -60,7 +60,7 @@
         automerge: true,
       },
       {
-        matchPackagePatterns: ["^black$"],
+        matchPackageNames: ["black"],
         /**
          * Automerge is enabled.
          * Reason: Package Health
@@ -69,7 +69,7 @@
         automerge: true,
       },
       {
-        matchPackagePatterns: ["^timevec$"],
+        matchPackageNames: ["timevec"],
         /**
          * Automerge is enabled.
          * Reason: I am the author
@@ -77,7 +77,7 @@
         automerge: true,
       },
       {
-        matchPackagePatterns: ["^cachepot$"],
+        matchPackageNames: ["cachepot"],
         /**
          * Automerge is enabled.
          * Reason: I am the author
@@ -85,7 +85,7 @@
         automerge: true,
       },
       {
-        matchPackagePatterns: ["^richset$"],
+        matchPackageNames: ["richset"],
         /**
          * Automerge is enabled.
          * Reason: I am the author
@@ -93,7 +93,7 @@
         automerge: true,
       },
       {
-        matchPackagePatterns: ["^dict-zip$"],
+        matchPackageNames: ["dict-zip"],
         /**
          * Automerge is enabled.
          * Reason: I am the author
@@ -101,7 +101,7 @@
         automerge: true,
       },
       {
-        matchPackagePatterns: ["^bamboo-crawler$"],
+        matchPackageNames: ["bamboo-crawler"],
         /**
          * Automerge is enabled.
          * Reason: I am the author
@@ -109,7 +109,7 @@
         automerge: true,
       },
       {
-        matchPackagePatterns: ["^throttle-controller$"],
+        matchPackageNames: ["throttle-controller"],
         /**
          * Automerge is enabled.
          * Reason: I am the author
@@ -117,7 +117,7 @@
         automerge: true,
       },
       {
-        matchPackagePatterns: ["^tally-token$"],
+        matchPackageNames: ["tally-token"],
         /**
          * Automerge is enabled.
          * Reason: I am the author

@@ -119,6 +119,29 @@ I only enable auto merge for the following rules.
   - Community ... Code of conducts, number of maintainers, number of contributors, code review, code coverage, etc.
   - Documentation ... README, CONTRIBUTING, etc.
 
+## Development
+
+Install [lefthook](https://github.com/evilmartians/lefthook) and register the hooks once after cloning:
+
+```sh
+lefthook install
+```
+
+### Git hooks
+
+| Hook | Jobs | Command |
+| --- | --- | --- |
+| pre-commit | validate-renovate | `bun run validate:renovate` |
+| pre-push | validate-renovate | `bun run validate:renovate` |
+| pre-push | test | `bun test` |
+
+The pre-commit hook validates all Renovate config files against the schema so you get
+feedback before the commit is recorded.
+The pre-push hook re-runs validation and the full test suite before pushing.
+
+CI (`lint.yml`) runs the same commands on every pull request — the hooks bring that
+feedback earlier in the development cycle without replacing CI.
+
 ## License
 
 I don't think that there is any right in this repository because this repository contains only configuration for Renovate application.

@@ -1,11 +1,4 @@
-#!/usr/bin/env bash
-set -euo pipefail
-cd "${0%/*}"
-{
-  gibo dump Linux
-  gibo dump Windows
-  gibo dump macOS
-  gibo dump Node
-} > .gitignore.tmp
-[ -s .gitignore.tmp ] || { rm -f .gitignore.tmp; exit 1; }
-mv .gitignore.tmp .gitignore
+gibo dump Linux
+gibo dump Windows
+gibo dump macOS
+gibo dump Node

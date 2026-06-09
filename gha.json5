@@ -22,12 +22,12 @@
          *   The 3-day value is Renovate's built-in default quarantine window, derived from npm ecosystem convention.
          *   Without a formal SLA to anchor a different duration, keeping the default is the prudent baseline.
          */
-        matchDatasources: ["github-tags"],
+        matchDatasources: ["github-tags", "github-releases"],
         internalChecksFilter: "strict",
         minimumReleaseAge: "3 days",
       },
       {
-        matchPackagePatterns: ["^actions/checkout$"],
+        matchPackageNames: ["actions/checkout"],
         /**
          * Automerge is enabled.
          * Reason: Official GitHub Action.
@@ -35,7 +35,7 @@
         automerge: true,
       },
       {
-        matchPackagePatterns: ["^actions/upload-artifact$"],
+        matchPackageNames: ["actions/upload-artifact"],
         /**
          * Automerge is enabled.
          * Reason: Official GitHub Action.
@@ -43,7 +43,7 @@
         automerge: true,
       },
       {
-        matchPackagePatterns: ["^actions/download-artifact$"],
+        matchPackageNames: ["actions/download-artifact"],
         /**
          * Automerge is enabled.
          * Reason: Official GitHub Action.
@@ -51,20 +51,24 @@
         automerge: true,
       },
       {
-        matchPackagePatterns: ["^kitsuyui/happy-commit$"],
+        matchPackageNames: ["kitsuyui/happy-commit"],
         /**
          * Automerge is enabled.
          * Reason: I am the author.
+         * Major version bumps are excluded to require explicit review.
          */
         automerge: true,
+        matchUpdateTypes: ["minor", "patch"],
       },
       {
-        matchPackagePatterns: ["^kitsuyui/gh-actions-workflows$"],
+        matchPackageNames: ["kitsuyui/gh-actions-workflows"],
         /**
          * Automerge is enabled.
          * Reason: I am the author.
+         * Major version bumps are excluded to require explicit review.
          */
         automerge: true,
+        matchUpdateTypes: ["minor", "patch"],
       },
     ],
   },

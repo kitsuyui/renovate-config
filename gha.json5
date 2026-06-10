@@ -19,7 +19,8 @@
          *
          * Inference:
          * - GitHub documents governance controls, but no fixed public Marketplace malware review SLA is cited here.
-         *   Keep the default 3 day quarantine window.
+         *   The 3-day value is Renovate's built-in default quarantine window, derived from npm ecosystem convention.
+         *   Without a formal SLA to anchor a different duration, keeping the default is the prudent baseline.
          */
         matchDatasources: ["github-tags", "github-releases"],
         internalChecksFilter: "strict",

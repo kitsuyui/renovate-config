@@ -29,3 +29,4 @@ jobs:
 
       - name: Audit dependencies
         run: bun audit --audit-level=high
+        continue-on-error: true

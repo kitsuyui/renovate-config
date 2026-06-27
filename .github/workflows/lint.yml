@@ -20,8 +20,9 @@ jobs:
       - name: Installation
         run: bun install --frozen-lockfile
 
-      - name: Validate schema
-        run: bun run validate:renovate
+      - parallel:
+          - name: Validate schema
+            run: bun run validate:renovate
 
-      - name: Test pattern matching
-        run: bun test
+          - name: Test pattern matching
+            run: bun test

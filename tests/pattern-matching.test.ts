@@ -104,3 +104,19 @@ describe('gha.json5 matchPackageNames', () => {
       expect(matchesPattern(pattern, 'actions/download-artifacts')).toBe(false))
   })
 })
+
+// cargo.json5 — matchPackageNames coverage (crate datasource)
+describe('cargo.json5 matchPackageNames', () => {
+  describe('/^rust-codecov/ (regex prefix)', () => {
+    const pattern = '^rust-codecov'
+
+    it('matches rust-codecov', () =>
+      expect(matchesPattern(pattern, 'rust-codecov')).toBe(true))
+    it('matches rust-codecov-core', () =>
+      expect(matchesPattern(pattern, 'rust-codecov-core')).toBe(true))
+    it('does not match rustfmt', () =>
+      expect(matchesPattern(pattern, 'rustfmt')).toBe(false))
+    it('does not match codecov-rust', () =>
+      expect(matchesPattern(pattern, 'codecov-rust')).toBe(false))
+  })
+})

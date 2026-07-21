@@ -57,7 +57,7 @@ If you configure these things in each project, you will have to configure the sa
 ### Versioning and live updates
 
 This repository has **no versioned releases**. All sub-preset references in
-`default.json5` (`github>kitsuyui/renovate-config:<file>`) point to the default
+`default.json` (`github>kitsuyui/renovate-config:<file>`) point to the default
 branch without SHA pinning. This is intentional: changes take effect
 immediately for all consumers.
 

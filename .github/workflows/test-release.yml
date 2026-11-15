@@ -1,0 +1,19 @@
+name: Test release preparation
+
+on:
+  pull_request:
+    paths:
+      - .github/workflows/release.yml
+      - .github/workflows/test-release.yml
+      - scripts/create-release.sh
+      - tests/create-release.sh
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
+      - run: bash tests/create-release.sh
